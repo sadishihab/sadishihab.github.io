@@ -32,29 +32,29 @@ With 14+ years of experience, including co-founding Bangladesh’s first online 
 
 ## 🌟 Featured Projects
 
-- 🖥️ **[Single-Node-Kubernetes-Cluster](https://github.com/sadishihab/Single-Node-Kubernetes-Cluster)**  
-  Multi-service web app deployed on a single-node Kubernetes cluster using Minikube  
-  **Tech:** [![Kubernetes](https://img.shields.io/badge/Kubernetes-326CE5?style=for-the-badge&logo=kubernetes&logoColor=white)](https://kubernetes.io/) [![Docker](https://img.shields.io/badge/Docker-2496ED?style=for-the-badge&logo=docker&logoColor=white)](https://www.docker.com/) [![Ingress](https://img.shields.io/badge/Ingress-000000?style=for-the-badge&logo=nginx&logoColor=white)](https://kubernetes.io/docs/concepts/services-networking/ingress/)
+**[Single-Node-Kubernetes-Cluster](https://github.com/sadishihab/Single-Node-Kubernetes-Cluster)**  
+Multi-service web app deployed on a single-node Kubernetes cluster using Minikube  
+**Tech:** Kubernetes · Docker · Ingress
 
-- 🐍 **[Leetcode](https://github.com/sadishihab/Leetcode)**  
-  Python solutions to Leetcode problems  
-  **Tech:** [![Python](https://img.shields.io/badge/Python-3776AB?style=for-the-badge&logo=python&logoColor=white)](https://www.python.org/) [![DSA](https://img.shields.io/badge/DSA-FF5733?style=for-the-badge)](https://en.wikipedia.org/wiki/Data_structure) [![Algorithms](https://img.shields.io/badge/Algorithms-007ACC?style=for-the-badge)](https://en.wikipedia.org/wiki/Algorithm)
+**[Leetcode](https://github.com/sadishihab/Leetcode)**  
+Python solutions to Leetcode problems  
+**Tech:** Python · DSA · Algorithms
 
-- 🌐 **[Terraform](https://github.com/sadishihab/terraform)**  
-  Infrastructure as Code with Terraform  
-  **Tech:** [![Terraform](https://img.shields.io/badge/Terraform-623CE4?style=for-the-badge&logo=terraform&logoColor=white)](https://www.terraform.io/) [![AWS](https://img.shields.io/badge/AWS-232F3E?style=for-the-badge&logo=amazon-aws&logoColor=white)](https://aws.amazon.com/)
+**[Terraform](https://github.com/sadishihab/terraform)**  
+Infrastructure as Code with Terraform  
+**Tech:** Terraform · IaC · AWS
 
-- 📊 **[Prometheus Monitoring](https://github.com/sadishihab/prometheus)**  
-  Monitoring setup using Prometheus and Grafana  
-  **Tech:** [![Prometheus](https://img.shields.io/badge/Prometheus-E6522C?style=for-the-badge&logo=prometheus&logoColor=white)](https://prometheus.io/) [![Grafana](https://img.shields.io/badge/Grafana-F46800?style=for-the-badge&logo=grafana&logoColor=white)](https://grafana.com/)
+**[Prometheus Monitoring](https://github.com/sadishihab/prometheus)**  
+Monitoring setup using Prometheus and Grafana  
+**Tech:** Prometheus · Grafana · Metrics
 
-- ⚙️ **[Ansible Automation](https://github.com/sadishihab/ansible)**  
-  Configuration management using Ansible  
-  **Tech:** [![Ansible](https://img.shields.io/badge/Ansible-EE0000?style=for-the-badge&logo=ansible&logoColor=white)](https://www.ansible.com/)
+**[Ansible Automation](https://github.com/sadishihab/ansible)**  
+Configuration management using Ansible  
+**Tech:** Ansible · Playbooks · Automation
 
-- 🤖 **[Python Automation Projects](https://github.com/sadishihab/automation-with-python)**  
-  Automating workflows and tasks using Python scripting  
-  **Tech:** [![Python](https://img.shields.io/badge/Python-3776AB?style=for-the-badge&logo=python&logoColor=white)](https://www.python.org/)
+**[Python Automation Projects](https://github.com/sadishihab/automation-with-python)**  
+Automating workflows and tasks using Python scripting  
+**Tech:** Python · Automation
 
 ---
 
