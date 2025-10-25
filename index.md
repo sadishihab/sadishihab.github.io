@@ -16,7 +16,7 @@ With 14+ years of experience, including co-founding Bangladesh’s first online 
 
 ---
 
-## 💻 Tech Stack
+## Tech Stack
 [![Python](https://img.shields.io/badge/Python-3776AB?style=for-the-badge&logo=python&logoColor=white)](https://www.python.org/)
 [![Docker](https://img.shields.io/badge/Docker-2496ED?style=for-the-badge&logo=docker&logoColor=white)](https://www.docker.com/)
 [![Kubernetes](https://img.shields.io/badge/Kubernetes-326CE5?style=for-the-badge&logo=kubernetes&logoColor=white)](https://kubernetes.io/)
@@ -30,7 +30,7 @@ With 14+ years of experience, including co-founding Bangladesh’s first online 
 
 ---
 
-## 🌟 Featured Projects
+## Featured Projects
 
 **[Single-Node-Kubernetes-Cluster](https://github.com/sadishihab/Single-Node-Kubernetes-Cluster)**  
 Multi-service web app deployed on a single-node Kubernetes cluster using Minikube  
@@ -58,7 +58,7 @@ Automating workflows and tasks using Python scripting
 
 ---
 
-## 🧰 Core Skills
+## Core Skills
 
 **Platform & DevOps:** Kubernetes, Docker, AWS, Terraform, Jenkins, Ansible, CI/CD  
 **Programming:** C, C++, Java, Python, Bash, PowerShell, JavaScript, YAML, SQL  
@@ -70,7 +70,7 @@ Automating workflows and tasks using Python scripting
 
 ---
 
-## 📁 Projects
+## Projects
 
 | Project | Description | Tech Highlights |
 |---------|-------------|----------------|
@@ -92,7 +92,7 @@ Automating workflows and tasks using Python scripting
 
 ---
 
-## 🌱 Learning
+## Learning
 
 - Advanced Kubernetes & Platform Engineering concepts  
 - Cloud-native monitoring and observability tools  
@@ -101,7 +101,7 @@ Automating workflows and tasks using Python scripting
 
 ---
 
-## 🧩 Goals
+## Goals
 
 - Build production-grade Kubernetes clusters end-to-end  
 - Design secure, automated CI/CD pipelines for microservices  
@@ -109,7 +109,7 @@ Automating workflows and tasks using Python scripting
 
 ---
 
-## 🤝 Connect with Me
+## Connect with Me
 
 - **GitHub:** [sadishihab](https://github.com/sadishihab)  
 - **LinkedIn:** [Md. Shihabuddin Sadi](https://www.linkedin.com/in/sadishihab)  
