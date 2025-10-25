@@ -3,7 +3,7 @@ layout: default
 title: Home
 ---
 
-# 👋 Hi, I'm Md. Shihabuddin Sadi
+# Hi, I'm Md. Shihabuddin Sadi
 
 **Software Engineer | DevOps & Cloud Native Engineer | Aspiring Platform Engineer**
 
