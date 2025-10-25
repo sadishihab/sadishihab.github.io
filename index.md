@@ -117,4 +117,4 @@ Automating workflows and tasks using Python scripting
 
 ---
 
-⭐ Check out my repositories → [github.com/sadishihab?tab=repositories](https://github.com/sadishihab?tab=repositories)
+Check out my repositories → [github.com/sadishihab?tab=repositories](https://github.com/sadishihab?tab=repositories)
