@@ -15,7 +15,7 @@ With 14+ years of experience, including co-founding Bangladesh’s first online 
 > “Automate everything. Consistency builds reliability.”
 
 ---
-## 🧰 Tech Stack
+## 💻 Tech Stack
 [![Python](https://img.shields.io/badge/Python-3776AB?style=for-the-badge&logo=python&logoColor=white)](https://www.python.org/)
 [![Docker](https://img.shields.io/badge/Docker-2496ED?style=for-the-badge&logo=docker&logoColor=white)](https://www.docker.com/)
 [![Kubernetes](https://img.shields.io/badge/Kubernetes-326CE5?style=for-the-badge&logo=kubernetes&logoColor=white)](https://kubernetes.io/)
