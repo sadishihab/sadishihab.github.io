@@ -15,6 +15,7 @@ I focus on designing and automating scalable developer platforms, CI/CD pipeline
 With 15+ years of experience, including co-founding Bangladesh’s first online training marketplace and working with global teams at Samsung R&D, I bring strong programming skills (**C, C++, Java, Python, Bash**) and a problem-solving mindset to cloud and DevOps projects.
 
 ---
+[Read my blog →](/blog/)
 
 ## Tech Stack
 [![Python](https://img.shields.io/badge/Python-3776AB?style=for-the-badge&logo=python&logoColor=white)](https://www.python.org/)
