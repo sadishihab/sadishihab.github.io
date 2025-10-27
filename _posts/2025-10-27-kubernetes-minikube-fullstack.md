@@ -13,12 +13,16 @@ permalink: /kubernetes-minikube-fullstack/
 
 This project showcases how I built a complete **full-stack application** (React frontend, Node.js backend, MongoDB database) inside a **single-node Kubernetes cluster** using **Minikube**.  
 It demonstrates real-world DevOps practices such as **Deployments, Services, Ingress, ConfigMaps, Secrets**, and **Persistent Volumes**, all tied together with a custom automation script that simplifies cluster management.  
-The goal was to **replicate a production-like Kubernetes setup locally**, helping me deepen my understanding of **cloud-native application deployment and orchestration**.
+The goal was to **replicate a production-like Kubernetes setup locally**, helping me deepen my understanding of **cloud-native application deployment and orchestration**.  
+
+
+🔗 **GitHub Repository:** [sadishihab/kubernetes-minikube-fullstack](https://github.com/sadishihab/kubernetes-minikube-fullstack)
 
 
 ### **Key Technologies Used**
 
 `Kubernetes` · `Minikube` · `Docker` · `Node.js` · `React` · `MongoDB` · `NGINX Ingress` · `ConfigMaps` · `Secrets` · `Persistent Volume` · `Shell scripting`  
+
 
 ### **1. Project Overview**
 
