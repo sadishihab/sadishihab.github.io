@@ -13,6 +13,8 @@ image: /assets/images/kubernetes-minikube-cover.png
 *Software Engineer · DevOps & Cloud Native Engineer · Aspiring Platform Engineer*  
 *October 26, 2025*  
 
+<br>
+
 ### **Summary**
 
 This project showcases how I built a complete **full-stack application** (React frontend, Node.js backend, MongoDB database) inside a **single-node Kubernetes cluster** using **Minikube**.  
@@ -21,7 +23,7 @@ The goal was to **replicate a production-like Kubernetes setup locally**, helpin
 <br>
 🔗 **GitHub Repository:** [sadishihab/kubernetes-minikube-fullstack](https://github.com/sadishihab/kubernetes-minikube-fullstack)
 
-## Table of Contents
+### Table of Contents
 
 - [Summary](#summary)
 - [Key Technologies Used](#key-technologies-used)
