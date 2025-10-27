@@ -90,7 +90,8 @@ The project demonstrates a **three-tier architecture** deployed in Minikube usin
    └──────────────────────────┘
 
 ```
-<>br
+<br>
+
 ### **2. Folder Structure**  
 ```bash
 ├── frontend/               # Frontend (React)
