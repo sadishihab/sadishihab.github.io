@@ -3,6 +3,10 @@ title: "Building a Full-Stack App on a Single-Node Kubernetes Cluster"
 date: 2025-10-27
 layout: post
 permalink: /kubernetes-minikube-fullstack/
+categories: [DevOps, Kubernetes, Full-Stack]
+tags: [Kubernetes, Minikube, Docker, Node.js, React, MongoDB, Cloud-Native, CI/CD]
+description: "Learn how to deploy a full-stack (React + Node.js + MongoDB) app on a single-node Kubernetes cluster using Minikube — from containerization to deployment, monitoring, and best practices."
+image: /assets/images/kubernetes-minikube-cover.png
 ---
 
 **Md. Shihabuddin Sadi**  
@@ -16,6 +20,20 @@ It demonstrates real-world DevOps practices such as **Deployments, Services, Ing
 The goal was to **replicate a production-like Kubernetes setup locally**, helping me deepen my understanding of **cloud-native application deployment and orchestration**.  
 <br>
 🔗 **GitHub Repository:** [sadishihab/kubernetes-minikube-fullstack](https://github.com/sadishihab/kubernetes-minikube-fullstack)
+
+## Table of Contents
+
+- [Summary](#summary)
+- [Key Technologies Used](#key-technologies-used)
+- [1. Project Overview](#1-project-overview)
+- [Architecture Diagram](#architecture-diagram)
+- [2. Folder Structure](#2-folder-structure)
+- [3. Setup Instructions](#3-setup-instructions)
+- [4. Automation Script Instructions](#4-automation-script-instructions)
+- [5. Common Errors & Fixes](#5-common-errors--fixes)
+- [6. Learning Outcomes](#6-learning-outcomes)
+- [References](#references)
+- [License](#license)
 
 
 ### **Key Technologies Used**
@@ -122,7 +140,7 @@ minikube tunnel
 ```
 Then open the browser and visit the **Ingress host URL.**  
 
-### **4. Setup Instructions**  
+### **4. Automation Script Instructions**  
 To simplify cluster operations, I created a script that can:
 
 - Stop all deployments (scale to 0)
