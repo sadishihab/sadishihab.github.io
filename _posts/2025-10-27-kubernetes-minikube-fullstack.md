@@ -2,6 +2,7 @@
 title: "Building a Full-Stack App on a Single-Node Kubernetes Cluster"
 date: 2025-10-27
 layout: post
+permalink: /kubernetes-minikube-fullstack/
 ---
 
 **Md. Shihabuddin Sadi**  
