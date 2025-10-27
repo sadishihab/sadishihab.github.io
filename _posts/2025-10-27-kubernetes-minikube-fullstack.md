@@ -6,7 +6,7 @@ layout: post
 
 **Md. Shihabuddin Sadi**  
 *Software Engineer · DevOps & Cloud Native Engineer · Aspiring Platform Engineer*  
-*October 26, 2025*
+*October 26, 2025*  
 
 ### **Summary**
 
@@ -17,10 +17,9 @@ The goal was to **replicate a production-like Kubernetes setup locally**, helpin
 
 ### **Key Technologies Used**
 
-`Kubernetes` · `Minikube` · `Docker` · `Node.js` · `React` · `MongoDB` · `NGINX Ingress` · `ConfigMaps` · `Secrets` · `Persistent Volume` · `Shell scripting`
+`Kubernetes` · `Minikube` · `Docker` · `Node.js` · `React` · `MongoDB` · `NGINX Ingress` · `ConfigMaps` · `Secrets` · `Persistent Volume` · `Shell scripting`  
 
-
-## **1. Project Overview**
+### **1. Project Overview**
 
 The project demonstrates a **three-tier architecture** deployed in Minikube using the Docker driver:
 
@@ -32,7 +31,7 @@ The project demonstrates a **three-tier architecture** deployed in Minikube usin
 - **ConfigMaps & Secrets** – For configuration and environment management  
 
 
-### **Architecture Diagram**
+#### **Architecture Diagram**
 ```pgsql
                ┌────────────────────────────┐
                │      Browser / User        │
@@ -70,7 +69,8 @@ The project demonstrates a **three-tier architecture** deployed in Minikube usin
    └──────────────────────────┘
 
 ```
-## **2. Folder Structure**  
+
+### **2. Folder Structure**  
 ```bash
 ├── frontend/               # Frontend (React)
 ├── backend/                # Backend (Node.js)
@@ -83,13 +83,15 @@ The project demonstrates a **three-tier architecture** deployed in Minikube usin
 └── README.md
 
 ```
-## **3. Setup Instructions**  
+
+### **3. Setup Instructions**  
 **Start Minikube**  
 ```bash
 minikube start --driver=docker
 eval $(minikube docker-env)
 
 ```
+
 **Apply Configurations**  
 ```bash
 kubectl apply -f k8s/app-configmap.yaml
@@ -116,7 +118,7 @@ minikube tunnel
 ```
 Then open the browser and visit the **Ingress host URL.**  
 
-## **4. Setup Instructions**  
+### **4. Setup Instructions**  
 To simplify cluster operations, I created a script that can:
 
 - Stop all deployments (scale to 0)
@@ -133,7 +135,7 @@ To simplify cluster operations, I created a script that can:
 ./k8s-manage.sh --restore
 
 ```
-## **5. Common Errors & Fixes**  
+### **5. Common Errors & Fixes**  
 
 **❌ Image not updating after rebuild**
 
@@ -173,19 +175,19 @@ kubectl get ingress
 ```
 Then open the listed **ADDRESS** in your browser.
 
-## **6. Learning Outcomes**
+### **6. Learning Outcomes**
 - Hands-on experience with single-node Kubernetes
 - Understanding multi-service orchestration
 - Learned PVC, ConfigMap, Secret, and Ingress usage
 - Practiced pod scaling, rolling updates, and backup/restore workflows
 - Deepened understanding of DevOps & Cloud Native principles
 
-## **References**
+### **References**
 - [Kubernetes Official Docs](https://kubernetes.io/docs/)
 - [Minikube Official Docs](https://minikube.sigs.k8s.io/docs/)
 - [Docker Official Docs](https://docs.docker.com/)
 
-## **License**
+### **License**
 This project is open-source and available under the MIT License
 
 
