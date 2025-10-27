@@ -5,7 +5,15 @@ description: "Software Engineer | DevOps & Cloud Native Engineer | Aspiring Plat
 github:
   is_project_page: true
   repository_url: "https://github.com/sadishihab"
-  
+
+# Plugins
 plugins:
   - jekyll-feed
 
+# RSS Feed configuration
+feed:
+  path: feed.xml
+  title: "Md. Shihabuddin Sadi Blog"
+  description: "DevOps, Cloud, Kubernetes, and Automation"
+  # url is optional, GitHub Pages will usually detect it automatically
+  url: "https://sadishihab.github.io"
