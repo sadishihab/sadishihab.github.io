@@ -10,9 +10,9 @@ title: Home
 I’m a Software Engineer and DevOps enthusiast, actively building my expertise as an Aspiring Platform Engineer with hands-on experience in cloud infrastructure and automation.  
 I focus on designing and automating scalable developer platforms, CI/CD pipelines, and cloud workflows, using tools like **Kubernetes, Docker, Terraform, and AWS**.
 
-With 14+ years of experience, including co-founding Bangladesh’s first online training marketplace and working with global teams at Samsung R&D, I bring strong programming skills (**C, C++, Java, Python, Bash**) and a problem-solving mindset to cloud and DevOps projects.
-
 > “Automate everything. Consistency builds reliability.”
+
+With 15+ years of experience, including co-founding Bangladesh’s first online training marketplace and working with global teams at Samsung R&D, I bring strong programming skills (**C, C++, Java, Python, Bash**) and a problem-solving mindset to cloud and DevOps projects.
 
 ---
 
