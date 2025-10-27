@@ -36,8 +36,7 @@ The goal was to **replicate a production-like Kubernetes setup locally**, helpin
 - [6. Learning Outcomes](#6-learning-outcomes)
 - [References](#references)
 - [License](#license)
-
-
+<br>  
 ### **Key Technologies Used**
 
 `Kubernetes` · `Minikube` · `Docker` · `Node.js` · `React` · `MongoDB` · `NGINX Ingress` · `ConfigMaps` · `Secrets` · `Persistent Volume` · `Shell scripting`  
