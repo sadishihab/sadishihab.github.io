@@ -23,6 +23,8 @@ The goal was to **replicate a production-like Kubernetes setup locally**, helpin
 <br>
 🔗 **GitHub Repository:** [sadishihab/kubernetes-minikube-fullstack](https://github.com/sadishihab/kubernetes-minikube-fullstack)
 
+<br>
+
 ### Table of Contents
 
 - [Summary](#summary)
@@ -36,11 +38,13 @@ The goal was to **replicate a production-like Kubernetes setup locally**, helpin
 - [6. Learning Outcomes](#6-learning-outcomes)
 - [References](#references)
 - [License](#license)
-<br>  
+<br>
+
 ### **Key Technologies Used**
 
 `Kubernetes` · `Minikube` · `Docker` · `Node.js` · `React` · `MongoDB` · `NGINX Ingress` · `ConfigMaps` · `Secrets` · `Persistent Volume` · `Shell scripting`  
 <br>
+
 ### **1. Project Overview**
 
 The project demonstrates a **three-tier architecture** deployed in Minikube using the Docker driver:
@@ -207,6 +211,7 @@ kubectl get ingress
 ```
 Then open the listed **ADDRESS** in your browser.
 <br>
+
 ### **6. Learning Outcomes**
 - Hands-on experience with single-node Kubernetes
 - Understanding multi-service orchestration
@@ -214,10 +219,12 @@ Then open the listed **ADDRESS** in your browser.
 - Practiced pod scaling, rolling updates, and backup/restore workflows
 - Deepened understanding of DevOps & Cloud Native principles
 <br>
+
 ### **References**
 - [Kubernetes Official Docs](https://kubernetes.io/docs/)
 - [Minikube Official Docs](https://minikube.sigs.k8s.io/docs/)
 - [Docker Official Docs](https://docs.docker.com/)
 <br>
+
 ### **License**
 This project is open-source and available under the MIT License
