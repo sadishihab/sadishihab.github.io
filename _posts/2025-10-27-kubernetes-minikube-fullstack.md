@@ -39,8 +39,7 @@ The goal was to **replicate a production-like Kubernetes setup locally**, helpin
 ### **Key Technologies Used**
 
 `Kubernetes` · `Minikube` · `Docker` · `Node.js` · `React` · `MongoDB` · `NGINX Ingress` · `ConfigMaps` · `Secrets` · `Persistent Volume` · `Shell scripting`  
-
-
+<br>
 ### **1. Project Overview**
 
 The project demonstrates a **three-tier architecture** deployed in Minikube using the Docker driver:
@@ -51,7 +50,7 @@ The project demonstrates a **three-tier architecture** deployed in Minikube usin
 - **Ingress** – For routing and browser access  
 - **PVC (Persistent Volume Claim)** – To ensure MongoDB data survives restarts  
 - **ConfigMaps & Secrets** – For configuration and environment management  
-
+<br>
 
 #### **Architecture Diagram**
 ```pgsql
@@ -91,7 +90,7 @@ The project demonstrates a **three-tier architecture** deployed in Minikube usin
    └──────────────────────────┘
 
 ```
-
+<>br
 ### **2. Folder Structure**  
 ```bash
 ├── frontend/               # Frontend (React)
@@ -105,6 +104,7 @@ The project demonstrates a **three-tier architecture** deployed in Minikube usin
 └── README.md
 
 ```
+<br>
 
 ### **3. Setup Instructions**  
 **Start Minikube**  
@@ -113,6 +113,7 @@ minikube start --driver=docker
 eval $(minikube docker-env)
 
 ```
+<br>
 
 **Apply Configurations**  
 ```bash
@@ -126,6 +127,8 @@ kubectl apply -f k8s/frontend.yaml
 kubectl apply -f k8s/ingress.yaml
 
 ```
+<br>
+
 **Verify**
 ```bash
 kubectl get pods
@@ -133,13 +136,15 @@ kubectl get svc
 kubectl get ingress
 
 ```
+<br>
+
 **Access the App**  
 ```bash
 minikube tunnel
 
 ```
 Then open the browser and visit the **Ingress host URL.**  
-
+<br>
 ### **4. Automation Script Instructions**  
 To simplify cluster operations, I created a script that can:
 
@@ -148,6 +153,7 @@ To simplify cluster operations, I created a script that can:
 - Backup all manifests and services
 - Store from backups
 - Operate by namespace
+<br>
 
 **Examples:**  
 ```bash
@@ -157,6 +163,8 @@ To simplify cluster operations, I created a script that can:
 ./k8s-manage.sh --restore
 
 ```
+<br>
+
 ### **5. Common Errors & Fixes**  
 
 **❌ Image not updating after rebuild**
@@ -196,18 +204,18 @@ kubectl get ingress
 
 ```
 Then open the listed **ADDRESS** in your browser.
-
+<br>
 ### **6. Learning Outcomes**
 - Hands-on experience with single-node Kubernetes
 - Understanding multi-service orchestration
 - Learned PVC, ConfigMap, Secret, and Ingress usage
 - Practiced pod scaling, rolling updates, and backup/restore workflows
 - Deepened understanding of DevOps & Cloud Native principles
-
+<br>
 ### **References**
 - [Kubernetes Official Docs](https://kubernetes.io/docs/)
 - [Minikube Official Docs](https://minikube.sigs.k8s.io/docs/)
 - [Docker Official Docs](https://docs.docker.com/)
-
+<br>
 ### **License**
 This project is open-source and available under the MIT License
