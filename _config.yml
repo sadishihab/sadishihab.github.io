@@ -9,11 +9,14 @@ github:
 # Plugins
 plugins:
   - jekyll-feed
+  - jekyll-seo-tag  # Added for better SEO metadata (recommended)
 
 # RSS Feed configuration
 feed:
   path: feed.xml
   title: "Md. Shihabuddin Sadi Blog"
   description: "DevOps, Cloud, Kubernetes, and Automation"
-  # url is optional, GitHub Pages will usually detect it automatically
   url: "https://sadishihab.github.io"
+
+# SEO Meta Description (for better discoverability)
+seo_description: "Md. Shihabuddin Sadi — Software Engineer specializing in DevOps, Cloud Native technologies, and Platform Engineering. Experienced in Kubernetes, Docker, CI/CD pipelines, and Infrastructure as Code (IaC). Passionate about automating workflows, optimizing developer experience, and building scalable cloud platforms."
