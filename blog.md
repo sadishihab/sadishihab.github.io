@@ -6,7 +6,11 @@ permalink: /blog/
 
 # My Blog
 
-**Stay updated:** [Subscribe via RSS](https://sadishihab.github.io/feed.xml)
+**Stay updated:** 
+<a href="https://sadishihab.github.io/feed.xml">
+  <img src="https://upload.wikimedia.org/wikipedia/commons/4/43/Feed-icon.svg" alt="RSS Feed" width="20" style="vertical-align: middle;">
+</a>
+[Subscribe via RSS](https://sadishihab.github.io/feed.xml)
 
 Here are my latest posts:
 
