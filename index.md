@@ -17,6 +17,10 @@ With over 15 years of experience — including co-founding Bangladesh’s first 
 ---
 ## Blog
 [Read my latest posts here →](/blog/)
+<br>
+<br>
+[Subscribe to my RSS feed for updates →](https://sadishihab.github.io/feed.xml)
+
 
 ## Tech Stack
 [![Python](https://img.shields.io/badge/Python-3776AB?style=for-the-badge&logo=python&logoColor=white)](https://www.python.org/)
