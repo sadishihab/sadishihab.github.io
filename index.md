@@ -114,7 +114,7 @@ Automating workflows and tasks using Python scripting
 ## Connect with Me
 
 - **GitHub:** [sadishihab](https://github.com/sadishihab)  
-- **LinkedIn:** [Md. Shihabuddin Sadi](https://www.linkedin.com/in/sadishihab)  
+- **LinkedIn:** [Md. Shihabuddin Sadi](https://www.linkedin.com/in/md-shihabuddin-sadi/)  
 - **Email:** sadi.shihab@gmail.com  
 
 ---
