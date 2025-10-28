@@ -6,16 +6,21 @@ description: "Software Engineer specializing in DevOps, Cloud Native technologie
 author:
   name: "Md. Shihabuddin Sadi"
   url: "https://github.com/sadishihab"
-  twitter: "sadishihab"  # optional – if you have a Twitter/X handle
 
 github:
   is_project_page: true
   repository_url: "https://github.com/sadishihab"
 
+social:
+  name: "Md. Shihabuddin Sadi"
+  links:
+    - "https://github.com/sadishihab"
+    - "https://www.linkedin.com/in/md-shihabuddin-sadi/"
+
 # Plugins
 plugins:
   - jekyll-feed
-  - jekyll-seo-tag  # for SEO metadata
+  - jekyll-seo-tag  # for SEO metadata and structured data
 
 # RSS Feed configuration
 feed:
