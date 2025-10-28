@@ -1,6 +1,12 @@
 theme: jekyll-theme-hacker
+
 title: "Md. Shihabuddin Sadi"
-description: "Md. Shihabuddin Sadi — Software Engineer specializing in DevOps, Cloud Native technologies, and Platform Engineering. Experienced in Kubernetes, Docker, CI/CD pipelines, and Infrastructure as Code (IaC). Passionate about automating workflows, optimizing developer experience, and building scalable cloud platforms."
+description: "Software Engineer specializing in DevOps, Cloud Native technologies, and Platform Engineering. Experienced in Kubernetes, Docker, CI/CD pipelines, and Infrastructure as Code (IaC). Passionate about automating workflows, optimizing developer experience, and building scalable cloud platforms."
+
+author:
+  name: "Md. Shihabuddin Sadi"
+  url: "https://github.com/sadishihab"
+  twitter: "sadishihab"  # optional – if you have a Twitter/X handle
 
 github:
   is_project_page: true
@@ -9,7 +15,7 @@ github:
 # Plugins
 plugins:
   - jekyll-feed
-  - jekyll-seo-tag  # Added for better SEO metadata (recommended)
+  - jekyll-seo-tag  # for SEO metadata
 
 # RSS Feed configuration
 feed:
