@@ -106,7 +106,7 @@ The project demonstrates a **three-tier architecture** deployed in Minikube usin
 │   ├── services           # Service YAMLs
 │   ├── ingress.yaml        # Ingress config
 │   ├── pvc.yaml            # MongoDB PVC
-│   └── configmaps-secrets/ # ConfigMaps & Secrets
+│   └── configmaps-secrets  # ConfigMaps & Secrets
 └── README.md
 
 ```
