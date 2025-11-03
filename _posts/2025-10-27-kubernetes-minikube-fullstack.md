@@ -21,7 +21,7 @@ This project showcases how I built a complete **full-stack application** (React 
 It demonstrates real-world DevOps practices such as **Deployments, Services, Ingress, ConfigMaps, Secrets**, and **Persistent Volumes**, all tied together with a custom automation script that simplifies cluster management.  
 The goal was to **replicate a production-like Kubernetes setup locally**, helping me deepen my understanding of **cloud-native application deployment and orchestration**.  
 <br>
-🔗 **GitHub Repository:** [sadishihab/kubernetes-minikube-fullstack](https://github.com/sadishihab/kubernetes-minikube-fullstack)
+🔗 **GitHub Repository:** [sadishihab/kubernetes-minikube-fullstack](https://github.com/sadishihab/Single-Node-Kubernetes-Cluster)
 
 <br>
 
