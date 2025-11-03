@@ -8,10 +8,8 @@ tags: [Kubernetes, Minikube, Docker, Node.js, React, MongoDB, Cloud-Native, CI/C
 description: "Learn how to deploy a full-stack (React + Node.js + MongoDB) app on a single-node Kubernetes cluster using Minikube — from containerization to deployment, monitoring, and best practices."
 image: /assets/images/kubernetes-minikube-cover.png
 author: "Md. Shihabuddin Sadi"
-  
 ---
-
-**Md. Shihabuddin Sadi**  
+ 
 *Software Engineer · DevOps & Cloud Native Engineer · Aspiring Platform Engineer*  
 *October 26, 2025*  
 
