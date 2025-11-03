@@ -102,8 +102,8 @@ The project demonstrates a **three-tier architecture** deployed in Minikube usin
 ├── frontend/               # Frontend (React)
 ├── backend/                # Backend (Node.js)
 ├── k8s/                    # Kubernetes manifests
-│   ├── deployments/        # Deployment YAMLs
-│   ├── services/           # Service YAMLs
+│   ├── deployments        # Deployment YAMLs
+│   ├── services           # Service YAMLs
 │   ├── ingress.yaml        # Ingress config
 │   ├── pvc.yaml            # MongoDB PVC
 │   └── configmaps-secrets/ # ConfigMaps & Secrets
