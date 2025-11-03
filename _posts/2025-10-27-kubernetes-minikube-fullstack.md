@@ -9,6 +9,7 @@ description: "Learn how to deploy a full-stack (React + Node.js + MongoDB) app o
 image: /assets/images/kubernetes-minikube-cover.png
 author:
   name: "Md. Shihabuddin Sadi"
+  url: "https://github.com/sadishihab"
 ---
 
 **Md. Shihabuddin Sadi**  
