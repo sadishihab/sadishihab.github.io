@@ -31,34 +31,34 @@ With over 15 years of experience — including co-founding Bangladesh’s first 
 ## Tech Stack
 
 <a href="https://www.python.org/">
-  <img src="https://img.shields.io/badge/Python-3776AB?style=for-the-badge&logo=python&logoColor=white" width="150" height="40" alt="Python">
+  <img src="https://img.shields.io/badge/Python-3776AB?style=for-the-badge&logo=python&logoColor=white" alt="Python" style="height:28px; display:inline-block;">
 </a>
 <a href="https://www.docker.com/">
-  <img src="https://img.shields.io/badge/Docker-2496ED?style=for-the-badge&logo=docker&logoColor=white" width="150" height="40" alt="Docker">
+  <img src="https://img.shields.io/badge/Docker-2496ED?style=for-the-badge&logo=docker&logoColor=white" alt="Docker" style="height:28px; display:inline-block;">
 </a>
 <a href="https://kubernetes.io/">
-  <img src="https://img.shields.io/badge/Kubernetes-326CE5?style=for-the-badge&logo=kubernetes&logoColor=white" width="150" height="40" alt="Kubernetes">
+  <img src="https://img.shields.io/badge/Kubernetes-326CE5?style=for-the-badge&logo=kubernetes&logoColor=white" alt="Kubernetes" style="height:28px; display:inline-block;">
 </a>
 <a href="https://aws.amazon.com/">
-  <img src="https://img.shields.io/badge/AWS-232F3E?style=for-the-badge&logo=amazon-aws&logoColor=white" width="150" height="40" alt="AWS">
+  <img src="https://img.shields.io/badge/AWS-232F3E?style=for-the-badge&logo=amazon-aws&logoColor=white" alt="AWS" style="height:28px; display:inline-block;">
 </a>
 <a href="https://www.terraform.io/">
-  <img src="https://img.shields.io/badge/Terraform-623CE4?style=for-the-badge&logo=terraform&logoColor=white" width="150" height="40" alt="Terraform">
+  <img src="https://img.shields.io/badge/Terraform-623CE4?style=for-the-badge&logo=terraform&logoColor=white" alt="Terraform" style="height:28px; display:inline-block;">
 </a>
 <a href="https://www.kernel.org/">
-  <img src="https://img.shields.io/badge/Linux-FCC624?style=for-the-badge&logo=linux&logoColor=black" width="150" height="40" alt="Linux">
+  <img src="https://img.shields.io/badge/Linux-FCC624?style=for-the-badge&logo=linux&logoColor=black" alt="Linux" style="height:28px; display:inline-block;">
 </a>
 <a href="https://github.com/features/actions">
-  <img src="https://img.shields.io/badge/GitHub%20Actions-2088FF?style=for-the-badge&logo=github-actions&logoColor=white" width="150" height="40" alt="GitHub Actions">
+  <img src="https://img.shields.io/badge/GitHub%20Actions-2088FF?style=for-the-badge&logo=github-actions&logoColor=white" alt="GitHub Actions" style="height:28px; display:inline-block;">
 </a>
 <a href="https://nginx.org/">
-  <img src="https://img.shields.io/badge/NGINX-009639?style=for-the-badge&logo=nginx&logoColor=white" width="150" height="40" alt="NGINX">
+  <img src="https://img.shields.io/badge/NGINX-009639?style=for-the-badge&logo=nginx&logoColor=white" alt="NGINX" style="height:28px; display:inline-block;">
 </a>
 <a href="https://nodejs.org/">
-  <img src="https://img.shields.io/badge/Node.js-339933?style=for-the-badge&logo=node.js&logoColor=white" width="150" height="40" alt="Node.js">
+  <img src="https://img.shields.io/badge/Node.js-339933?style=for-the-badge&logo=node.js&logoColor=white" alt="Node.js" style="height:28px; display:inline-block;">
 </a>
 <a href="https://www.mongodb.com/">
-  <img src="https://img.shields.io/badge/MongoDB-47A248?style=for-the-badge&logo=mongodb&logoColor=white" width="150" height="40" alt="MongoDB">
+  <img src="https://img.shields.io/badge/MongoDB-47A248?style=for-the-badge&logo=mongodb&logoColor=white" alt="MongoDB" style="height:28px; display:inline-block;">
 </a>
 
 ---
