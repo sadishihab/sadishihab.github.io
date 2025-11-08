@@ -17,6 +17,7 @@ I focus on designing reliable CI/CD pipelines, cloud workflows, and infrastructu
 
 With over 15 years of experience — including co-founding Bangladesh’s first online training marketplace and contributing to global teams at Samsung R&D — I combine strong programming skills (**C, C++, Java, Python, Bash**) with a deep understanding of DevOps and cloud systems.
 
+<br>
 ---
 
 ## Blog
