@@ -3,6 +3,9 @@ layout: default
 title: Home
 ---
 
+<!-- Preconnect to shields.io for faster badge loading -->
+<link rel="preconnect" href="https://img.shields.io" crossorigin>
+
 ## Hi, I’m Md. Shihabuddin Sadi
 
 **Software Engineer | DevOps & Cloud Native Engineer | Aspiring Platform Engineer**
@@ -15,24 +18,48 @@ I focus on designing reliable CI/CD pipelines, cloud workflows, and infrastructu
 With over 15 years of experience — including co-founding Bangladesh’s first online training marketplace and contributing to global teams at Samsung R&D — I combine strong programming skills (**C, C++, Java, Python, Bash**) with a deep understanding of DevOps and cloud systems.
 
 ---
+
 ## Blog
 [Read my latest posts here →](/blog/)
-<br>
-<br>
+
+<br><br>
+
 [Subscribe to my RSS feed for updates →](https://sadishihab.github.io/feed.xml)
 
+---
 
 ## Tech Stack
-[![Python](https://img.shields.io/badge/Python-3776AB?style=for-the-badge&logo=python&logoColor=white)](https://www.python.org/)
-[![Docker](https://img.shields.io/badge/Docker-2496ED?style=for-the-badge&logo=docker&logoColor=white)](https://www.docker.com/)
-[![Kubernetes](https://img.shields.io/badge/Kubernetes-326CE5?style=for-the-badge&logo=kubernetes&logoColor=white)](https://kubernetes.io/)
-[![AWS](https://img.shields.io/badge/AWS-232F3E?style=for-the-badge&logo=amazon-aws&logoColor=white)](https://aws.amazon.com/)
-[![Terraform](https://img.shields.io/badge/Terraform-623CE4?style=for-the-badge&logo=terraform&logoColor=white)](https://www.terraform.io/)
-[![Linux](https://img.shields.io/badge/Linux-FCC624?style=for-the-badge&logo=linux&logoColor=black)](https://www.kernel.org/)
-[![GitHub Actions](https://img.shields.io/badge/GitHub%20Actions-2088FF?style=for-the-badge&logo=github-actions&logoColor=white)](https://github.com/features/actions)
-[![NGINX](https://img.shields.io/badge/NGINX-009639?style=for-the-badge&logo=nginx&logoColor=white)](https://nginx.org/)
-[![Node.js](https://img.shields.io/badge/Node.js-339933?style=for-the-badge&logo=node.js&logoColor=white)](https://nodejs.org/)
-[![MongoDB](https://img.shields.io/badge/MongoDB-47A248?style=for-the-badge&logo=mongodb&logoColor=white)](https://www.mongodb.com/)
+
+<a href="https://www.python.org/">
+  <img src="https://img.shields.io/badge/Python-3776AB?style=for-the-badge&logo=python&logoColor=white" width="150" height="40" alt="Python">
+</a>
+<a href="https://www.docker.com/">
+  <img src="https://img.shields.io/badge/Docker-2496ED?style=for-the-badge&logo=docker&logoColor=white" width="150" height="40" alt="Docker">
+</a>
+<a href="https://kubernetes.io/">
+  <img src="https://img.shields.io/badge/Kubernetes-326CE5?style=for-the-badge&logo=kubernetes&logoColor=white" width="150" height="40" alt="Kubernetes">
+</a>
+<a href="https://aws.amazon.com/">
+  <img src="https://img.shields.io/badge/AWS-232F3E?style=for-the-badge&logo=amazon-aws&logoColor=white" width="150" height="40" alt="AWS">
+</a>
+<a href="https://www.terraform.io/">
+  <img src="https://img.shields.io/badge/Terraform-623CE4?style=for-the-badge&logo=terraform&logoColor=white" width="150" height="40" alt="Terraform">
+</a>
+<a href="https://www.kernel.org/">
+  <img src="https://img.shields.io/badge/Linux-FCC624?style=for-the-badge&logo=linux&logoColor=black" width="150" height="40" alt="Linux">
+</a>
+<a href="https://github.com/features/actions">
+  <img src="https://img.shields.io/badge/GitHub%20Actions-2088FF?style=for-the-badge&logo=github-actions&logoColor=white" width="150" height="40" alt="GitHub Actions">
+</a>
+<a href="https://nginx.org/">
+  <img src="https://img.shields.io/badge/NGINX-009639?style=for-the-badge&logo=nginx&logoColor=white" width="150" height="40" alt="NGINX">
+</a>
+<a href="https://nodejs.org/">
+  <img src="https://img.shields.io/badge/Node.js-339933?style=for-the-badge&logo=node.js&logoColor=white" width="150" height="40" alt="Node.js">
+</a>
+<a href="https://www.mongodb.com/">
+  <img src="https://img.shields.io/badge/MongoDB-47A248?style=for-the-badge&logo=mongodb&logoColor=white" width="150" height="40" alt="MongoDB">
+</a>
 
 ---
 
