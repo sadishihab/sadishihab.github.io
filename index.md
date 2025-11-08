@@ -22,7 +22,7 @@ With over 15 years of experience — including co-founding Bangladesh’s first 
 ## Blog
 [Read my latest posts here →](/blog/)
 
-<br><br>
+<br>
 
 [Subscribe to my RSS feed for updates →](https://sadishihab.github.io/feed.xml)
 
