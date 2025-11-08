@@ -75,6 +75,7 @@ With over 15 years of experience — including co-founding Bangladesh’s first 
 
 </div>
 
+<br>
 ---
 
 ## Featured Projects
@@ -103,6 +104,7 @@ Configuration management using Ansible
 Automating workflows and tasks using Python scripting  
 **Tech:** Python · Automation
 
+<br>
 ---
 
 ## Core Skills
@@ -115,6 +117,7 @@ Automating workflows and tasks using Python scripting
 **Monitoring:** Prometheus, Grafana  
 **Web & Software Development:** Full-stack application development, responsive web design, automation, and networking
 
+<br>
 ---
 
 ## Projects
@@ -137,6 +140,7 @@ Automating workflows and tasks using Python scripting
 | java-app-deploy | Create a server and deploy an app on DigitalOcean | Java · DO · Deployment |
 | linux | Basic Linux commands and shell utilities | Bash · Linux · SysOps |
 
+<br>
 ---
 
 ## Learning
@@ -146,6 +150,7 @@ Automating workflows and tasks using Python scripting
 - GitOps workflows using ArgoCD & Flux  
 - Terraform & AWS architecture deep dive  
 
+<br>
 ---
 
 ## Goals
@@ -154,6 +159,7 @@ Automating workflows and tasks using Python scripting
 - Design secure, automated CI/CD pipelines for microservices  
 - Contribute to open-source DevOps & cloud projects  
 
+<br>
 ---
 
 ## Connect with Me
@@ -162,6 +168,7 @@ Automating workflows and tasks using Python scripting
 - **LinkedIn:** [Md. Shihabuddin Sadi](https://www.linkedin.com/in/md-shihabuddin-sadi/)  
 - **Email:** sadi.shihab@gmail.com  
 
+<br>
 ---
 
 Check out my repositories → [github.com/sadishihab?tab=repositories](https://github.com/sadishihab?tab=repositories)
