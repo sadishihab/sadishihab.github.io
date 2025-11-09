@@ -110,25 +110,25 @@ Automating workflows and tasks using Python scripting
 
 ## Core Skills
 
-**Platform & DevOps:** Kubernetes, Docker, AWS, Terraform, Jenkins, Ansible, CI/CD
+**Platform & DevOps:** Kubernetes, Docker, AWS, Terraform, Jenkins, Ansible, CI/CD, EKS
 <br>
 
 **Programming:** C, C++, Java, Android, Python, Bash, JavaScript, YAML, SQL
 <br>
 
-**Tools & Platforms:** Git, Linux, AWS, DigitalOcean, Linode, Jira, ClickUp
+**Web & Software Development:** Full-stack application development, responsive web design, automation, networking
 <br>
 
 **Containers & Orchestration:** Docker, Kubernetes, EKS
 <br>
 
-**CI/CD:** Jenkins, GitHub Actions, GitLab CI/CD
+**CI/CD Tools:** GitHub Actions, GitLab CI/CD
 <br>
 
-**Monitoring:** Prometheus, Grafana
+**Monitoring & Observability:** Prometheus, Grafana
 <br>
 
-**Web & Software Development:** Full-stack application development, responsive web design, automation, and networking
+**Tools & Platforms:** Git, Linux, DigitalOcean, Linode, Jira, ClickUp
 
 <br>
 ---
