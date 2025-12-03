@@ -119,9 +119,6 @@ Automating workflows and tasks using Python scripting
 **Web & Software Development:** Full-stack application development, responsive web design, automation, networking
 <br>
 
-**Containers & Orchestration:** Docker, Kubernetes, EKS
-<br>
-
 **CI/CD Tools:** GitHub Actions, GitLab CI/CD
 <br>
 
