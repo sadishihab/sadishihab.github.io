@@ -153,6 +153,23 @@ Automating workflows and tasks using Python scripting
 <br>
 ---
 
+## Development & Software Engineering
+
+| Project | Description | Tech Highlights |
+|---------|-------------|----------------|
+| Training Pool | Training Pool is a SaaS-based training management and marketplace platform that allows trainers to publish, discover, and manage courses. Users can easily find, compare, and enroll in their desired training and courses instantly. | Node.js · React · MongoDB |
+| Multiplayer Mobile Game | A unique conceptual turn based multiplayer android trivia game for German and International version | Android · Node.js · MongoDB |
+| Samsung feature phone core moudules | Worked in the operating system of 'Middle East & Africa version' of various handset models of Samsung, especially on the Editor, NvManager, Alarm, Look Framework, and Call modules. Operating systems were NXP (Nexperia, developed by ST-Ericsson based on C with embedded java), MMP (man machine platform, based on C with embedded Java), SNMP (based on C with embedded Java) | C · Java · Feature Phone |
+| Bangla Calendar |  Developed and ported 'Bengali Calendar for Bangladesh Region' in the SGP platform feature phone models of Samsung | C · SGP · Feature Phone |
+| African Language Implementation |  Implemented various African languages (Swahili, Yoruba, Igbo, Hausa, and Amharic) in feature phone models (both 3*4 and QWERTY keypad) of Samsung | C · Samsung · Feature phone |
+| Debugging Embedded Systems |  Experienced in debugging embedded systems using the 'Trace 32' debugger, done 'Ramdump analysis', 'Tracing', and used 'Lauterbach' for hardware debugging | Trace 32 · Ramdump Analysis · Lauterbach |
+| Emulator Development | Developed emulator for the ease of development for various handset models of Samsung | C · Emulator · Samsung Feature Phone |
+| Tizen | Worked in 'Settings module' of Tizen platform which is developed on C and C++ wrapper | C · C++ · Samsung Feature Phone |
+| Android Operation System | Worked in the Android operating system source code of Samsung for solving localization and UI problems. | Android OS · Localization · UI |
+
+<br>
+---
+
 ## Learning
 
 - Advanced Kubernetes & Platform Engineering concepts  
