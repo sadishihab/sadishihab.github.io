@@ -116,7 +116,7 @@ Automating workflows and tasks using Python scripting
 **Programming:** C, C++, Java, Android, Python, Bash, JavaScript, YAML, SQL
 <br>
 
-**Web & Software Development:** Full-stack application development, responsive web design, automation, networking
+**Web & Software Development:** Full-stack web development, Mobile application development, automation, Release management
 <br>
 
 **CI/CD Tools:** GitHub Actions, GitLab CI/CD
@@ -125,7 +125,7 @@ Automating workflows and tasks using Python scripting
 **Monitoring & Observability:** Prometheus, Grafana
 <br>
 
-**Tools & Platforms:** Git, Linux, DigitalOcean, Linode, Jira, ClickUp
+**Tools & Platforms:** Git, Linux, AWS, DigitalOcean, Linode, Jira 
 
 <br>
 ---
