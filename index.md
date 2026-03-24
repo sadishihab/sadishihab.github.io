@@ -2,7 +2,7 @@
 
 layout: default
 title: Home
------------
+---
 
 <!-- Preconnect to shields.io for faster badge loading -->
 
