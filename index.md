@@ -8,14 +8,14 @@ title: Home
 
 ## Hi, I’m Md. Shihabuddin Sadi
 
-**Software Engineer | DevOps & Cloud Native Engineer | Aspiring Platform Engineer**
+**Software Engineer | DevOps & Cloud Native Engineer | Platform Engineering Enthusiast**
 
 I’m a Software Engineer and DevOps specialist passionate about building scalable, automated, and cloud-native developer platforms.  
 I focus on designing reliable CI/CD pipelines, cloud workflows, and infrastructure automation using **Kubernetes**, **Docker**, **Terraform**, and **AWS**.
 
 > “Automate everything. Consistency builds reliability.”
 
-With over 15 years of experience — including co-founding Bangladesh’s first online training marketplace and contributing to global teams at Samsung R&D — I combine strong programming skills (**C, C++, Java, Python, Bash**) with a deep understanding of DevOps and cloud systems.
+With over 15 years of experience — including co-founding Bangladesh’s first online training marketplace and contributing to global teams at Samsung R&D — I combine strong programming skills (**C, C++, Java, Python, Bash**) with a deep understanding of DevOps, cloud systems, and emerging platform engineering practices.
 
 <br>
 ---
