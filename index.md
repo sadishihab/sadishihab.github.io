@@ -1,10 +1,7 @@
 ---
-
 layout: default
 title: Home
 ---
-
-<!-- Preconnect to shields.io for faster badge loading -->
 
 <link rel="preconnect" href="https://img.shields.io" crossorigin>
 
@@ -13,42 +10,40 @@ title: Home
 **Software Engineer | DevOps & Cloud Native Engineer | Aspiring Platform Engineer**
 
 I’m a Software Engineer and DevOps specialist passionate about building scalable, automated, and cloud-native developer platforms.
-I focus on designing reliable CI/CD pipelines, cloud workflows, and infrastructure automation using **Kubernetes**, **Docker**, **Terraform**, and **AWS**.
 
-> “Automate everything. Consistency builds reliability.”
+I focus on designing reliable **Kubernetes-based infrastructure**, **CI/CD pipelines**, and **cloud-native systems** using **Docker, Kubernetes, Terraform, AWS, and Linux**.
 
-With over 15 years of experience — including co-founding Bangladesh’s first online training marketplace and contributing to global teams at Samsung R&D — I combine strong programming skills (**C, C++, Java, Python, Bash**) with a deep understanding of DevOps and cloud systems.
+> **“Automate everything. Consistency builds reliability.”**
 
-<br>
----
+With over **15 years of experience** — including co-founding Bangladesh’s first online training marketplace and contributing to global teams at **Samsung R&D** — I combine strong programming expertise (**C, C++, Java, Python, Bash**) with deep knowledge of DevOps and cloud systems.
+
+<hr>
 
 ## What I Do
 
-* Build Kubernetes-based platforms
-* Design CI/CD pipelines
-* Automate infrastructure with Terraform & Ansible
-* Implement monitoring with Prometheus & Grafana
-* Develop cloud-native developer workflows
+- Build Kubernetes-based platforms
+- Design CI/CD pipelines
+- Automate infrastructure with Terraform & Ansible
+- Implement monitoring with Prometheus & Grafana
+- Develop cloud-native developer workflows
 
-<br>
----
+<hr>
 
 ## Blog
 
-[Read my latest posts here →](/blog/)
+[Read my latest posts →](/blog/)
 
 <br>
 
-[Subscribe to my RSS feed for updates →](https://sadishihab.github.io/feed.xml)
+[Subscribe via RSS →](https://sadishihab.github.io/feed.xml)
 
-<br>
----
+<hr>
 
-## Tech Stack
+# Tech Stack
 
-### Programming
+## Programming
 
-<div style="display:flex; flex-wrap:wrap; gap:5px;">
+<div style="display:flex; flex-wrap:wrap; gap:6px;">
 
 <a href="https://www.python.org/">
 <img src="https://img.shields.io/badge/Python-3776AB?style=for-the-badge&logo=python&logoColor=white" height="28">
@@ -86,9 +81,9 @@ With over 15 years of experience — including co-founding Bangladesh’s first 
 
 <br>
 
-### DevOps & Platform Engineering
+## DevOps & Platform Engineering
 
-<div style="display:flex; flex-wrap:wrap; gap:5px;">
+<div style="display:flex; flex-wrap:wrap; gap:6px;">
 
 <a href="https://www.docker.com/">
 <img src="https://img.shields.io/badge/Docker-2496ED?style=for-the-badge&logo=docker&logoColor=white" height="28">
@@ -130,9 +125,9 @@ With over 15 years of experience — including co-founding Bangladesh’s first 
 
 <br>
 
-### Monitoring & Observability
+## Monitoring & Observability
 
-<div style="display:flex; flex-wrap:wrap; gap:5px;">
+<div style="display:flex; flex-wrap:wrap; gap:6px;">
 
 <a href="https://prometheus.io/">
 <img src="https://img.shields.io/badge/Prometheus-E6522C?style=for-the-badge&logo=prometheus&logoColor=white" height="28">
@@ -144,54 +139,95 @@ With over 15 years of experience — including co-founding Bangladesh’s first 
 
 </div>
 
-<br>
+<hr>
 
-### Supporting Technologies
+# Featured Projects
 
-<div style="display:flex; flex-wrap:wrap; gap:5px;">
-
-<a href="https://nodejs.org/">
-<img src="https://img.shields.io/badge/Node.js-339933?style=for-the-badge&logo=node.js&logoColor=white" height="28">
-</a>
-
-<a href="https://www.mongodb.com/">
-<img src="https://img.shields.io/badge/MongoDB-47A248?style=for-the-badge&logo=mongodb&logoColor=white" height="28">
-</a>
-
-<a href="https://developer.android.com/">
-<img src="https://img.shields.io/badge/Android-3DDC84?style=for-the-badge&logo=android&logoColor=white" height="28">
-</a>
-
-</div>
-
-<br>
----
-
-## Featured Projects
-
-**[Single-Node-Kubernetes-Cluster](https://github.com/sadishihab/Single-Node-Kubernetes-Cluster)**
-Multi-service web app deployed on a single-node Kubernetes cluster using Minikube
+### Single-Node-Kubernetes-Cluster
+Multi-service web app deployed on Kubernetes using Minikube  
 **Tech:** Kubernetes · Docker · Ingress
 
-**[Leetcode](https://github.com/sadishihab/Leetcode)**
-Python solutions to Leetcode problems
-**Tech:** Python · DSA · Algorithms
+### Terraform Infrastructure
+Infrastructure as Code with Terraform on AWS  
+**Tech:** Terraform · AWS · IaC
 
-**[Terraform](https://github.com/sadishihab/terraform)**
-Infrastructure as Code with Terraform
-**Tech:** Terraform · IaC · AWS
-
-**[Prometheus Monitoring](https://github.com/sadishihab/prometheus)**
-Monitoring setup using Prometheus and Grafana
+### Prometheus Monitoring
+Monitoring stack using Prometheus and Grafana  
 **Tech:** Prometheus · Grafana · Metrics
 
-**[Ansible Automation](https://github.com/sadishihab/ansible)**
-Configuration management using Ansible
-**Tech:** Ansible · Playbooks · Automation
+### Ansible Automation
+Configuration management and automation workflows  
+**Tech:** Ansible · Playbooks · Linux
 
-**[Python Automation Projects](https://github.com/sadishihab/automation-with-python)**
-Automating workflows and tasks using Python scripting
+### Python Automation
+Workflow automation using Python scripting  
 **Tech:** Python · Automation
 
-<br>
----
+### Leetcode
+Algorithm and DSA problem solving in Python  
+**Tech:** Python · DSA · Algorithms
+
+<hr>
+
+# Professional Experience
+
+### Samsung R&D
+- Feature phone OS development
+- Embedded system modules
+- Android and Tizen platform contributions
+- Localization and system debugging
+- Emulator and core module development
+
+### Training Pool (Co-Founder)
+- SaaS-based training marketplace
+- Node.js + React + MongoDB platform
+- Training management and course marketplace system
+
+<hr>
+
+# Development & Engineering Highlights
+
+- Embedded system debugging using Trace32 and Lauterbach
+- Android OS localization and UI improvements
+- African language implementation in Samsung devices
+- Bengali calendar implementation
+- Emulator development for handset platforms
+- Multiplayer Android trivia game
+- Training marketplace platform development
+
+<hr>
+
+# Learning
+
+- Advanced Kubernetes and Platform Engineering
+- GitOps (ArgoCD, Flux)
+- AWS architecture and Terraform
+- Cloud-native observability
+- Scalable infrastructure design
+
+<hr>
+
+# Goals
+
+- Build production-grade Kubernetes platforms
+- Design secure CI/CD systems
+- Contribute to open-source DevOps projects
+- Move into Platform Engineering / Solution Architecture roles
+
+<hr>
+
+# Connect with Me
+
+**GitHub**  
+https://github.com/sadishihab
+
+**LinkedIn**  
+https://www.linkedin.com/in/md-shihabuddin-sadi/
+
+**Email**  
+sadi.shihab@gmail.com
+
+<hr>
+
+Check all repositories →  
+https://github.com/sadishihab?tab=repositories
