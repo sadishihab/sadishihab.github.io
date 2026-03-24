@@ -24,18 +24,18 @@ With over 15 years of experience — including co-founding Bangladesh’s first 
 
 ### DevOps & Platform Engineering
 
-- <img src="https://img.shields.io/badge/Kubernetes-326CE5?style=for-the-badge&logo=kubernetes&logoColor=white" height="20"> Build Kubernetes-based platforms and cloud-native infrastructure
-- <img src="https://img.shields.io/badge/CI/CD-2088FF?style=for-the-badge&logo=github-actions&logoColor=white" height="20"> Design and implement CI/CD pipelines for automated deployments
-- <img src="https://img.shields.io/badge/Terraform-623CE4?style=for-the-badge&logo=terraform&logoColor=white" height="20"> Automate infrastructure using Terraform and Ansible
-- <img src="https://img.shields.io/badge/Prometheus-E6522C?style=for-the-badge&logo=prometheus&logoColor=white" height="20"> Implement monitoring and observability with Prometheus and Grafana
-- <img src="https://img.shields.io/badge/Cloud-Native-00C8FF?style=for-the-badge&logo=aws&logoColor=white" height="20"> Develop reliable cloud-native developer workflows
+- Build Kubernetes-based platforms and cloud-native infrastructure
+- Design and implement CI/CD pipelines for automated deployments
+- Automate infrastructure using Terraform and Ansible
+- Implement monitoring and observability with Prometheus and Grafana
+- Develop reliable cloud-native developer workflows
 
 ### Software Engineering & Problem Solving
 
-- <img src="https://img.shields.io/badge/Algorithms-FF6F61?style=for-the-badge&logo=python&logoColor=white" height="20"> Solve algorithm and data structure problems to build efficient solutions
-- <img src="https://img.shields.io/badge/Software_Engineering-007ACC?style=for-the-badge&logo=cplusplus&logoColor=white" height="20"> Design scalable software systems and backend architectures
-- <img src="https://img.shields.io/badge/Python-3776AB?style=for-the-badge&logo=python&logoColor=white" height="20"> Build automation tools and engineering utilities using Python and Bash
-- <img src="https://img.shields.io/badge/C%2B%2B-00599C?style=for-the-badge&logo=cplusplus&logoColor=white" height="20"> Write clean, maintainable, and production-ready code
+- Design scalable software systems and backend architectures
+- Solve algorithm and data structure problems to build efficient solutions
+- Write clean, maintainable, and production-ready code
+- Build automation tools and engineering utilities using Python and Bash
 
 <br>
 ---
