@@ -169,10 +169,6 @@ With over 15 years of experience — including co-founding Bangladesh’s first 
 <img src="https://img.shields.io/badge/MongoDB-47A248?style=for-the-badge&logo=mongodb&logoColor=white" height="28">
 </a>
 
-<a href="https://developer.android.com/">
-<img src="https://img.shields.io/badge/Android-3DDC84?style=for-the-badge&logo=android&logoColor=white" height="28">
-</a>
-
 </div>
 
 <br>
