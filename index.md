@@ -157,21 +157,6 @@ With over 15 years of experience — including co-founding Bangladesh’s first 
 
 <br>
 
-### Supporting Technologies
-
-<div style="display:flex; flex-wrap:wrap; gap:5px;">
-
-<a href="https://nodejs.org/">
-<img src="https://img.shields.io/badge/Node.js-339933?style=for-the-badge&logo=node.js&logoColor=white" height="28">
-</a>
-
-<a href="https://www.mongodb.com/">
-<img src="https://img.shields.io/badge/MongoDB-47A248?style=for-the-badge&logo=mongodb&logoColor=white" height="28">
-</a>
-
-</div>
-
-<br>
 ---
 
 ## Featured Projects
