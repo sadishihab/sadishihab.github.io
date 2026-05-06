@@ -8,7 +8,7 @@ title: Home
 
 ## Hi, I’m Md. Shihabuddin Sadi
 
-**Software Engineer | DevOps & Cloud Native Engineer | AI / RAG Application Developer | Platform Engineering Enthusiast**
+**Software Engineer | AI / RAG Application Developer  |  DevOps & Cloud Native Engineer  |  Platform Engineering Enthusiast**
 
 I’m a Software Engineer and DevOps specialist passionate about building scalable, automated, and cloud-native developer platforms — and I now also build production-grade **AI / RAG (Retrieval-Augmented Generation)** applications using **OpenAI**, **FAISS**, and **FastAPI**, integrated with real-world platforms like Facebook Messenger.  
 I focus on designing reliable CI/CD pipelines, cloud workflows, and infrastructure automation using **Kubernetes**, **Docker**, **Terraform**, and **AWS**, while also developing intelligent, multilingual AI applications grounded in curated knowledge bases.
