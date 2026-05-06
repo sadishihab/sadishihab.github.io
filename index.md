@@ -8,14 +8,14 @@ title: Home
 
 ## Hi, I’m Md. Shihabuddin Sadi
 
-**Software Engineer | DevOps & Cloud Native Engineer | Platform Engineering Enthusiast**
+**Software Engineer | DevOps & Cloud Native Engineer | AI / RAG Application Developer | Platform Engineering Enthusiast**
 
-I’m a Software Engineer and DevOps specialist passionate about building scalable, automated, and cloud-native developer platforms.  
-I focus on designing reliable CI/CD pipelines, cloud workflows, and infrastructure automation using **Kubernetes**, **Docker**, **Terraform**, and **AWS**.
+I’m a Software Engineer and DevOps specialist passionate about building scalable, automated, and cloud-native developer platforms — and I now also build production-grade **AI / RAG (Retrieval-Augmented Generation)** applications using **OpenAI**, **FAISS**, and **FastAPI**, integrated with real-world platforms like Facebook Messenger.  
+I focus on designing reliable CI/CD pipelines, cloud workflows, and infrastructure automation using **Kubernetes**, **Docker**, **Terraform**, and **AWS**, while also developing intelligent, multilingual AI applications grounded in curated knowledge bases.
 
 > “Automate everything. Consistency builds reliability.”
 
-With over 15 years of experience — including co-founding Bangladesh’s first online training marketplace and contributing to global teams at Samsung R&D — I combine strong programming skills (**C, C++, Java, Python, Bash**) with a deep understanding of DevOps, cloud systems, and emerging platform engineering practices.
+With over 15 years of experience — including co-founding Bangladesh’s first online training marketplace and contributing to global teams at Samsung R&D — I combine strong programming skills (**C, C++, Java, Python, Bash**) with a deep understanding of DevOps, cloud systems, AI application development, and emerging platform engineering practices.
 
 <br>
 ---
@@ -29,6 +29,15 @@ With over 15 years of experience — including co-founding Bangladesh’s first 
 - Automate infrastructure using Terraform and Ansible
 - Implement monitoring and observability with Prometheus and Grafana
 - Develop reliable cloud-native developer workflows
+
+### AI & RAG Application Development
+
+- Design production-ready RAG pipelines without heavy framework abstractions
+- Build multilingual chatbots (Bangla / Banglish / English) with controlled output language
+- Engineer embedding pipelines using OpenAI `text-embedding-3-small` and FAISS
+- Tune similarity thresholds and prompt strategies for grounded, safe responses
+- Integrate AI assistants with real-world platforms (Facebook Messenger, webhooks, Graph API)
+- Apply human-in-the-loop design with graceful fallback when confidence is low
 
 ### Software Engineering & Problem Solving
 
@@ -141,6 +150,42 @@ With over 15 years of experience — including co-founding Bangladesh’s first 
 
 <br>
 
+### AI / LLM / RAG
+
+<div style="display:flex; flex-wrap:wrap; gap:5px;">
+
+<a href="https://openai.com/">
+<img src="https://img.shields.io/badge/OpenAI-412991?style=for-the-badge&logo=openai&logoColor=white" height="28">
+</a>
+
+<a href="https://github.com/facebookresearch/faiss">
+<img src="https://img.shields.io/badge/FAISS-0467DF?style=for-the-badge&logo=meta&logoColor=white" height="28">
+</a>
+
+<a href="https://fastapi.tiangolo.com/">
+<img src="https://img.shields.io/badge/FastAPI-009688?style=for-the-badge&logo=fastapi&logoColor=white" height="28">
+</a>
+
+<a href="https://www.uvicorn.org/">
+<img src="https://img.shields.io/badge/Uvicorn-2C2C2C?style=for-the-badge&logo=uvicorn&logoColor=white" height="28">
+</a>
+
+<a href="https://numpy.org/">
+<img src="https://img.shields.io/badge/NumPy-013243?style=for-the-badge&logo=numpy&logoColor=white" height="28">
+</a>
+
+<a href="https://docs.pytest.org/">
+<img src="https://img.shields.io/badge/Pytest-0A9EDC?style=for-the-badge&logo=pytest&logoColor=white" height="28">
+</a>
+
+<a href="https://developers.facebook.com/docs/messenger-platform">
+<img src="https://img.shields.io/badge/Messenger%20Platform-0084FF?style=for-the-badge&logo=messenger&logoColor=white" height="28">
+</a>
+
+</div>
+
+<br>
+
 ### Monitoring & Observability
 
 <div style="display:flex; flex-wrap:wrap; gap:5px;">
@@ -160,6 +205,10 @@ With over 15 years of experience — including co-founding Bangladesh’s first 
 ---
 
 ## Featured Projects
+
+**[Minimal RAG Chatbot](https://github.com/sadishihab/minimal-rag-chatbot)**  
+A multilingual (Bangla / Banglish / English → formal Bangla) Retrieval-Augmented Generation chatbot for Minimal Limited on Facebook Messenger. Handles customer queries by retrieving the most relevant answer from a curated 224-entry knowledge base across 14 intents, and generates grounded replies in formal Bangla. Built without framework abstractions (no LangChain / LlamaIndex) for full pipeline transparency, with a 4-stage safe deployment workflow (terminal → local web → test FB page → live page) and human takeover support.  
+**Tech:** Python 3.13 · OpenAI (`text-embedding-3-small`, `gpt-4o-mini`) · FAISS · FastAPI · Uvicorn · Facebook Messenger Platform · Pytest
 
 **[Single-Node-Kubernetes-Cluster](https://github.com/sadishihab/Single-Node-Kubernetes-Cluster)**  
 Multi-service web app deployed on a single-node Kubernetes cluster using Minikube  
@@ -191,6 +240,7 @@ Automating workflows and tasks using Python scripting
 ## Core Skills
 
 **Platform & DevOps:** Kubernetes, Docker, AWS, Terraform, Jenkins, Ansible, CI/CD, EKS  
+**AI / LLM / RAG:** OpenAI API (embeddings + chat completions), FAISS vector search, RAG pipeline design, prompt engineering, cross-lingual prompting, similarity threshold tuning, multilingual knowledge base curation, intent taxonomy design, FastAPI, Facebook Messenger Platform integration  
 **Programming:** C, C++, Java, Android, Python, Bash, JavaScript, YAML, SQL  
 **Web & Software Development:** Full-stack web development, Mobile application development, automation, Release management  
 **CI/CD Tools:** GitHub Actions, GitLab CI/CD  
@@ -204,6 +254,7 @@ Automating workflows and tasks using Python scripting
 
 | Project | Description | Tech Highlights |
 |---------|-------------|----------------|
+| Minimal RAG Chatbot | Multilingual (Bangla / Banglish / English → formal Bangla) RAG chatbot for Minimal Limited on Facebook Messenger; 224 Q&A entries across 14 intents, with similarity-threshold fallback and human takeover | Python · OpenAI · FAISS · FastAPI · Messenger Platform |
 | Single-Node-Kubernetes-Cluster | Multi-service web app deployed on a single-node Kubernetes cluster using Minikube | Kubernetes · Docker · Ingress |
 | Leetcode | Python solutions to Leetcode problems | Python · DSA · Algorithms |
 | terraform | Infrastructure as Code with Terraform | Terraform · IaC · AWS |
@@ -246,6 +297,9 @@ Automating workflows and tasks using Python scripting
 - Cloud-native monitoring and observability tools  
 - GitOps workflows using ArgoCD & Flux  
 - Terraform & AWS architecture deep dive  
+- Production RAG pipeline design without heavy framework abstractions  
+- Embedding strategy, vector search tuning, and cross-lingual prompt engineering  
+- Multilingual NLP for low-resource and script-mixed languages (Bangla / Banglish)  
 
 <br>
 ---
@@ -254,7 +308,8 @@ Automating workflows and tasks using Python scripting
 
 - Build production-grade Kubernetes clusters end-to-end  
 - Design secure, automated CI/CD pipelines for microservices  
-- Contribute to open-source DevOps & cloud projects  
+- Ship reliable AI / RAG applications with strong evaluation, safety, and human-in-the-loop design  
+- Contribute to open-source DevOps, cloud, and AI projects  
 
 <br>
 ---
