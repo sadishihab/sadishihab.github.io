@@ -10,12 +10,13 @@ title: Home
 
 **Software Engineer | AI / RAG Application Developer  |  DevOps & Cloud Native Engineer  |  Platform Engineering Enthusiast**
 
-I’m a Software Engineer and DevOps specialist passionate about building scalable, automated, and cloud-native developer platforms — and I now also build production-grade **AI / RAG (Retrieval-Augmented Generation)** applications using **OpenAI**, **FAISS**, and **FastAPI**, integrated with real-world platforms like Facebook Messenger.  
-I focus on designing reliable CI/CD pipelines, cloud workflows, and infrastructure automation using **Kubernetes**, **Docker**, **Terraform**, and **AWS**, while also developing intelligent, multilingual AI applications grounded in curated knowledge bases.
+I’m a Software Engineer and DevOps specialist focused on building scalable, automated, and cloud-native platforms. I also develop production-grade **AI / RAG (Retrieval-Augmented Generation)** applications using **OpenAI**, **FAISS**, and **FastAPI**, integrated with real-world systems such as Facebook Messenger and multilingual knowledge platforms.
+
+My expertise spans designing reliable CI/CD pipelines, cloud infrastructure, and automation workflows using **Kubernetes**, **Docker**, **Terraform**, and **AWS**, while combining these with intelligent AI-driven solutions grounded in curated knowledge bases.
 
 > “Automate everything. Consistency builds reliability.”
 
-With over 15 years of experience — including co-founding Bangladesh’s first online training marketplace and contributing to global teams at Samsung R&D — I combine strong programming skills (**C, C++, Java, Python, Bash**) with a deep understanding of DevOps, cloud systems, AI application development, and emerging platform engineering practices.
+With more than 15 years of industry experience — from co-founding Bangladesh’s first online training marketplace to contributing to global engineering teams at Samsung R&D — I bring together strong software engineering fundamentals (**C**, **C++**, **Java**, **Python**, **Bash**) with deep expertise in DevOps, cloud architecture, AI application development, and modern platform engineering practices.
 
 <br>
 ---
