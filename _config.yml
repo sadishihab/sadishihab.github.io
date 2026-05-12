@@ -1,32 +1,25 @@
 theme: jekyll-theme-hacker
-
 title: "Md. Shihabuddin Sadi"
-description: "Software Engineer specializing in DevOps, Cloud Native technologies, and Platform Engineering. Experienced in Kubernetes, Docker, CI/CD pipelines, and Infrastructure as Code (IaC). Passionate about automating workflows, optimizing developer experience, and building scalable cloud platforms."
-
+description: "AI / RAG Application Developer · Production chatbots and AI agents that ship · Multilingual support, grounded retrieval, no hallucinations · Ex-Samsung R&D · 15+ years engineering"
 author:
   name: "Md. Shihabuddin Sadi"
   url: "https://github.com/sadishihab"
-
 github:
   is_project_page: true
   repository_url: "https://github.com/sadishihab"
-
 social:
   name: "Md. Shihabuddin Sadi"
   links:
     - "https://github.com/sadishihab"
     - "https://www.linkedin.com/in/md-shihabuddin-sadi/"
-
 # Plugins
 plugins:
   - jekyll-feed
   - jekyll-seo-tag  # for SEO metadata and structured data
-
 # RSS Feed configuration
 feed:
   path: feed.xml
-  title: "Md. Shihabuddin Sadi Blog"
-  description: "DevOps, Cloud, Kubernetes, and Automation"
+  title: "Md. Shihabuddin Sadi — AI, RAG & Cloud Engineering"
+  description: "Production RAG chatbots, AI agents, multilingual NLP, and the cloud infrastructure that runs them"
   url: "https://sadishihab.github.io"
-
 google_analytics: G-EQVFR6Y826
