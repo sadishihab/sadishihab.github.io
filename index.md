@@ -1,67 +1,157 @@
 ---
 layout: default
-title: Home
+title: Md. Shihabuddin Sadi — AI / RAG Application Developer | Production Chatbots & Agents
+description: I build production RAG chatbots and AI agents that ship. Multilingual support, grounded retrieval, no hallucinations. Ex-Samsung R&D. Book a call.
 ---
 
 <!-- Preconnect to shields.io for faster badge loading -->
 <link rel="preconnect" href="https://img.shields.io" crossorigin>
 
-## Hi, I’m Md. Shihabuddin Sadi
+<!-- Open Graph / social share -->
+<meta property="og:title" content="Md. Shihabuddin Sadi — AI / RAG Application Developer">
+<meta property="og:description" content="Production RAG chatbots and AI agents that actually work. Multilingual, grounded, reliable.">
+<meta property="og:type" content="website">
+<meta property="og:url" content="https://sadishihab.github.io/">
 
-**Software Engineer | AI / RAG Application Developer  |  DevOps & Cloud Native Engineer  |  Platform Engineering Enthusiast**
+## I build production RAG chatbots and AI agents that ship.
 
-I’m a Software Engineer and DevOps specialist focused on building scalable, automated, and cloud-native platforms. I also develop production-grade **AI / RAG (Retrieval-Augmented Generation)** applications using **OpenAI**, **FAISS**, and **FastAPI**, integrated with real-world systems such as Facebook Messenger and multilingual knowledge platforms.
+**Multilingual support. Grounded retrieval. No hallucinations.**
+Real users, real traffic, real outcomes.
 
-My expertise spans designing reliable CI/CD pipelines, cloud infrastructure, and automation workflows using **Kubernetes**, **Docker**, **Terraform**, and **AWS**, while combining these with intelligent AI-driven solutions grounded in curated knowledge bases.
+Ex-Samsung R&D · 15+ years software engineering · Based in Dhaka, Bangladesh · Available worldwide remote
 
-> “Automate everything. Consistency builds reliability.”
+<div style="display:flex; flex-wrap:wrap; gap:12px; margin: 20px 0 30px 0;">
 
-With more than 15 years of industry experience — from co-founding Bangladesh’s first online training marketplace to contributing to global engineering teams at Samsung R&D — I bring together strong software engineering fundamentals (**C**, **C++**, **Java**, **Python**, **Bash**) with deep expertise in DevOps, cloud architecture, AI application development, and modern platform engineering practices.
+<a href="https://calendly.com/sadi-shihab/30min" style="background:#0a66c2; color:white; padding:12px 24px; border-radius:6px; text-decoration:none; font-weight:600;">
+📅 Book a 30-min call →
+</a>
+
+<a href="#featured-project" style="background:#f3f2ef; color:#0a66c2; padding:12px 24px; border-radius:6px; text-decoration:none; font-weight:600; border:1px solid #0a66c2;">
+See my work ↓
+</a>
+
+</div>
 
 <br>
+
 ---
 
-## What I Do
+## What I Build
 
-### DevOps & Platform Engineering
+- **Production RAG chatbots** over your docs, PDFs, Notion, or SQL — with citations, not hallucinations
+- **Multilingual AI agents** (Bangla, Banglish, English, and other low-resource or script-mixed languages — great for South Asian, Middle East, and emerging-market audiences)
+- **Messenger / WhatsApp / Telegram / Slack bots** wired to your real data
+- **Custom AI copilots** embedded inside SaaS products
+- **Evaluation pipelines, observability, and guardrails** so your AI doesn't silently regress in production
 
-- Build Kubernetes-based platforms and cloud-native infrastructure
-- Design and implement CI/CD pipelines for automated deployments
-- Automate infrastructure using Terraform and Ansible
-- Implement monitoring and observability with Prometheus and Grafana
-- Develop reliable cloud-native developer workflows
+### Also
 
-### AI & RAG Application Development
-
-- Design production-ready RAG pipelines without heavy framework abstractions
-- Build multilingual chatbots (Bangla / Banglish / English) with controlled output language
-- Engineer embedding pipelines using OpenAI `text-embedding-3-small` and FAISS
-- Tune similarity thresholds and prompt strategies for grounded, safe responses
-- Integrate AI assistants with real-world platforms (Facebook Messenger, webhooks, Graph API)
-- Apply human-in-the-loop design with graceful fallback when confidence is low
-
-### Software Engineering & Problem Solving
-
-- Design scalable software systems and backend architectures
-- Solve algorithm and data structure problems to build efficient solutions
-- Write clean, maintainable, and production-ready code
-- Build automation tools and engineering utilities using Python and Bash
+The cloud infrastructure to keep all of it running reliably — **Kubernetes, AWS, Terraform, CI/CD, Prometheus, Grafana**. One contractor, one accountable line, no hand-off between "AI guy" and "DevOps guy."
 
 <br>
+
 ---
 
-## Blog
+<a id="featured-project"></a>
 
-[Read my latest posts here →](/blog/)
+## Featured Project — Minimal RAG Chatbot
+
+A production multilingual RAG chatbot deployed on Facebook Messenger for **Minimal Limited**, an interior design company in Dhaka. Customers send questions in **Bangla, Banglish, or English** — the bot always replies in **formal Bangla**, grounded in a curated knowledge base, with graceful human takeover when confidence is low.
+
+> **The deliberate design choice that paid off most:** embedding the question, not the answer. Customers send questions, so questions belong in the searchable space. This one decision fixed more "wrong answer" bugs than any prompt tweak.
+
+**Key decisions:**
+
+- Architected from scratch — **no LangChain, no LlamaIndex** — so every line of the pipeline is transparent and debuggable in production
+- **Similarity-threshold fallback**: if the top match isn't strong enough, the bot says *"share your number, our manager will call"* instead of hallucinating
+- **Cross-lingual prompt engineering**: input accepted in any of three languages, output strictly enforced as formal Bangla
+- **4-stage safe deployment**: terminal → local web → test FB page → live page
+- **12 passing pytest tests** covering schema, language enums, intent coverage, and answer-length rules
+
+**Stack:** Python 3.13 · OpenAI (`text-embedding-3-small`, `gpt-4o-mini`) · FAISS (`IndexFlatIP`, L2-normalized) · FastAPI · Uvicorn · Facebook Graph API · Pytest
+
+**At a glance:** 224 curated Q&A entries · 14 intents · top-k=3 retrieval · embedding-dim 1536
+
+📖 [Read the full case study →](/blog/) · 💻 [View on GitHub →](https://github.com/sadishihab/minimal-rag-chatbot)
 
 <br>
 
-[Subscribe to my RSS feed for updates →](https://sadishihab.github.io/feed.xml)
+---
+
+## Why Teams Hire Me
+
+- ✅ I've shipped real software for **15+ years** — not just AI demos
+- ✅ I bring **engineering rigor**: evals, logging, retrieval tuning, guardrails — the unglamorous work that decides whether your AI survives contact with real users
+- ✅ I can build the **AI and the cloud infra it runs on** — one person, one accountable line
 
 <br>
+
+---
+
+## How We'd Work Together
+
+1. **30-min discovery call** — tell me about your product, your data, and where AI fits
+2. **Scoped proposal within 48 hours** — what I'd build, timeline, cost
+3. **Build → ship → iterate** — typically **2–6 weeks** for a production RAG pilot
+4. **Optional ongoing support** — evals, observability, infra, and iteration
+
+<div style="margin: 20px 0;">
+<a href="https://calendly.com/sadi-shihab/30min" style="background:#0a66c2; color:white; padding:12px 24px; border-radius:6px; text-decoration:none; font-weight:600;">
+📅 Book a discovery call →
+</a>
+</div>
+
+<br>
+
+---
+
+## What People Say
+
+> "Sadi is a highly skilled solutions architect, DevOps expert, and technical project manager with a deep understanding of software development, system architecture, and cloud infrastructure. His ability to streamline complex processes, optimize workflows, and enhance system efficiency made him a key asset to Samsung's R&D initiatives. I highly recommend Md. Shihabuddin Sadi to anyone seeking a dedicated, skilled, and forward-thinking technical leader."
+>
+> — **Md Elme Focruzaman Razi**, Senior Staff Engineer at Samsung R&D Institute Bangladesh ([LinkedIn](https://www.linkedin.com/in/md-shihabuddin-sadi/details/recommendations/))
+
+<br>
+
 ---
 
 ## Tech Stack
+
+### AI / LLM / RAG
+
+<div style="display:flex; flex-wrap:wrap; gap:5px;">
+
+<a href="https://openai.com/">
+<img src="https://img.shields.io/badge/OpenAI-412991?style=for-the-badge&logo=openai&logoColor=white" height="28">
+</a>
+
+<a href="https://github.com/facebookresearch/faiss">
+<img src="https://img.shields.io/badge/FAISS-0467DF?style=for-the-badge&logo=meta&logoColor=white" height="28">
+</a>
+
+<a href="https://fastapi.tiangolo.com/">
+<img src="https://img.shields.io/badge/FastAPI-009688?style=for-the-badge&logo=fastapi&logoColor=white" height="28">
+</a>
+
+<a href="https://www.uvicorn.org/">
+<img src="https://img.shields.io/badge/Uvicorn-2C2C2C?style=for-the-badge&logo=uvicorn&logoColor=white" height="28">
+</a>
+
+<a href="https://numpy.org/">
+<img src="https://img.shields.io/badge/NumPy-013243?style=for-the-badge&logo=numpy&logoColor=white" height="28">
+</a>
+
+<a href="https://docs.pytest.org/">
+<img src="https://img.shields.io/badge/Pytest-0A9EDC?style=for-the-badge&logo=pytest&logoColor=white" height="28">
+</a>
+
+<a href="https://developers.facebook.com/docs/messenger-platform">
+<img src="https://img.shields.io/badge/Messenger%20Platform-0084FF?style=for-the-badge&logo=messenger&logoColor=white" height="28">
+</a>
+
+</div>
+
+<br>
 
 ### Programming
 
@@ -81,10 +171,6 @@ With more than 15 years of industry experience — from co-founding Bangladesh�
 
 <a href="https://www.java.com/">
 <img src="https://img.shields.io/badge/Java-ED8B00?style=for-the-badge&logo=java&logoColor=white" height="28">
-</a>
-
-<a href="https://developer.android.com/">
-<img src="https://img.shields.io/badge/Android-3DDC84?style=for-the-badge&logo=android&logoColor=white" height="28">
 </a>
 
 <a href="https://www.gnu.org/software/bash/">
@@ -107,7 +193,7 @@ With more than 15 years of industry experience — from co-founding Bangladesh�
 
 <br>
 
-### DevOps & Platform Engineering
+### DevOps & Cloud Infrastructure
 
 <div style="display:flex; flex-wrap:wrap; gap:5px;">
 
@@ -151,42 +237,6 @@ With more than 15 years of industry experience — from co-founding Bangladesh�
 
 <br>
 
-### AI / LLM / RAG
-
-<div style="display:flex; flex-wrap:wrap; gap:5px;">
-
-<a href="https://openai.com/">
-<img src="https://img.shields.io/badge/OpenAI-412991?style=for-the-badge&logo=openai&logoColor=white" height="28">
-</a>
-
-<a href="https://github.com/facebookresearch/faiss">
-<img src="https://img.shields.io/badge/FAISS-0467DF?style=for-the-badge&logo=meta&logoColor=white" height="28">
-</a>
-
-<a href="https://fastapi.tiangolo.com/">
-<img src="https://img.shields.io/badge/FastAPI-009688?style=for-the-badge&logo=fastapi&logoColor=white" height="28">
-</a>
-
-<a href="https://www.uvicorn.org/">
-<img src="https://img.shields.io/badge/Uvicorn-2C2C2C?style=for-the-badge&logo=uvicorn&logoColor=white" height="28">
-</a>
-
-<a href="https://numpy.org/">
-<img src="https://img.shields.io/badge/NumPy-013243?style=for-the-badge&logo=numpy&logoColor=white" height="28">
-</a>
-
-<a href="https://docs.pytest.org/">
-<img src="https://img.shields.io/badge/Pytest-0A9EDC?style=for-the-badge&logo=pytest&logoColor=white" height="28">
-</a>
-
-<a href="https://developers.facebook.com/docs/messenger-platform">
-<img src="https://img.shields.io/badge/Messenger%20Platform-0084FF?style=for-the-badge&logo=messenger&logoColor=white" height="28">
-</a>
-
-</div>
-
-<br>
-
 ### Monitoring & Observability
 
 <div style="display:flex; flex-wrap:wrap; gap:5px;">
@@ -205,123 +255,79 @@ With more than 15 years of industry experience — from co-founding Bangladesh�
 
 ---
 
-## Featured Projects
+## Other Work
 
-**[Minimal RAG Chatbot](https://github.com/sadishihab/minimal-rag-chatbot)**  
-A multilingual (Bangla / Banglish / English → formal Bangla) Retrieval-Augmented Generation chatbot for Minimal Limited on Facebook Messenger. Handles customer queries by retrieving the most relevant answer from a curated 224-entry knowledge base across 14 intents, and generates grounded replies in formal Bangla. Built without framework abstractions (no LangChain / LlamaIndex) for full pipeline transparency, with a 4-stage safe deployment workflow (terminal → local web → test FB page → live page) and human takeover support.  
-**Tech:** Python 3.13 · OpenAI (`text-embedding-3-small`, `gpt-4o-mini`) · FAISS · FastAPI · Uvicorn · Facebook Messenger Platform · Pytest
+A selection of supporting projects across cloud infrastructure, DevOps automation, and software engineering.
 
-**[Single-Node-Kubernetes-Cluster](https://github.com/sadishihab/Single-Node-Kubernetes-Cluster)**  
-Multi-service web app deployed on a single-node Kubernetes cluster using Minikube  
-**Tech:** Kubernetes · Docker · Ingress
+**[Single-Node Kubernetes Cluster](https://github.com/sadishihab/Single-Node-Kubernetes-Cluster)**
+Multi-service web app (React · Node.js · MongoDB) deployed on a single-node Kubernetes cluster using Minikube — Deployments, Services, Ingress, ConfigMaps, Secrets, PV/PVC.
+**Tech:** Kubernetes · Docker · Minikube · NGINX Ingress
 
-**[Leetcode](https://github.com/sadishihab/Leetcode)**  
-Python solutions to Leetcode problems  
-**Tech:** Python · DSA · Algorithms
+**[Kubernetes on AWS (EKS)](https://github.com/sadishihab/eks)**
+End-to-end CI/CD on AWS EKS — Fargate, eksctl, Jenkins, DockerHub, and ECR integrations.
+**Tech:** AWS · EKS · Fargate · Jenkins · Docker
 
-**[Terraform](https://github.com/sadishihab/terraform)**  
-Infrastructure as Code with Terraform  
-**Tech:** Terraform · IaC · AWS
+**[Terraform IaC](https://github.com/sadishihab/terraform)**
+Infrastructure as Code patterns for repeatable, auditable cloud deployments.
+**Tech:** Terraform · AWS
 
-**[Prometheus Monitoring](https://github.com/sadishihab/prometheus)**  
-Monitoring setup using Prometheus and Grafana  
-**Tech:** Prometheus · Grafana · Metrics
+**[Prometheus + Grafana Monitoring](https://github.com/sadishihab/prometheus)**
+Monitoring and observability setup for cloud-native applications.
+**Tech:** Prometheus · Grafana
 
-**[Ansible Automation](https://github.com/sadishihab/ansible)**  
-Configuration management using Ansible  
-**Tech:** Ansible · Playbooks · Automation
+**[Ansible Automation](https://github.com/sadishihab/ansible)**
+Configuration management and infrastructure automation playbooks.
+**Tech:** Ansible · Playbooks
 
-**[Python Automation Projects](https://github.com/sadishihab/automation-with-python)**  
-Automating workflows and tasks using Python scripting  
-**Tech:** Python · Automation
+**[Python Automation](https://github.com/sadishihab/automation-with-python)**
+Engineering utilities and workflow automation in Python.
+**Tech:** Python · Bash
 
-<br>
----
-
-## Core Skills
-
-**Platform & DevOps:** Kubernetes, Docker, AWS, Terraform, Jenkins, Ansible, CI/CD, EKS  
-**AI / LLM / RAG:** OpenAI API (embeddings + chat completions), FAISS vector search, RAG pipeline design, prompt engineering, cross-lingual prompting, similarity threshold tuning, multilingual knowledge base curation, intent taxonomy design, FastAPI, Facebook Messenger Platform integration  
-**Programming:** C, C++, Java, Android, Python, Bash, JavaScript, YAML, SQL  
-**Web & Software Development:** Full-stack web development, Mobile application development, automation, Release management  
-**CI/CD Tools:** GitHub Actions, GitLab CI/CD  
-**Monitoring & Observability:** Prometheus, Grafana  
-**Tools & Platforms:** Git, Linux, AWS, DigitalOcean, Linode, Jira  
+[See all repositories on GitHub →](https://github.com/sadishihab?tab=repositories)
 
 <br>
+
 ---
 
-## Projects
+## Background
 
-| Project | Description | Tech Highlights |
-|---------|-------------|----------------|
-| Minimal RAG Chatbot | Multilingual (Bangla / Banglish / English → formal Bangla) RAG chatbot for Minimal Limited on Facebook Messenger; 224 Q&A entries across 14 intents, with similarity-threshold fallback and human takeover | Python · OpenAI · FAISS · FastAPI · Messenger Platform |
-| Single-Node-Kubernetes-Cluster | Multi-service web app deployed on a single-node Kubernetes cluster using Minikube | Kubernetes · Docker · Ingress |
-| Leetcode | Python solutions to Leetcode problems | Python · DSA · Algorithms |
-| terraform | Infrastructure as Code with Terraform | Terraform · IaC · AWS |
-| prometheus | Monitoring setup using Prometheus and Grafana | Prometheus · Grafana · Metrics |
-| ansible | Configuration management using Ansible | Ansible · Playbooks · Automation |
-| automation-with-python | Automating workflows and tasks using Python scripting | Python · Automation |
-| python | Learning and practicing Python programming | Python · Basics · Projects |
-| eks | Kubernetes on AWS (EKS) setup and deployment | AWS · EKS · Kubernetes |
-| kubernetes | Container orchestration demos and Kubernetes configs | Kubernetes · Pods · Services |
-| aws-services | Complete CI/CD pipeline in AWS | AWS · CI/CD · Terraform |
-| jenkins | Build automation and CI/CD pipelines using Jenkins | Jenkins · Groovy · Automation |
-| docker | Docker projects and containerized applications | Docker · Compose · Images |
-| nexus | Running Nexus on droplet and publishing artifacts | Nexus · Artifact Mgmt · CI/CD |
-| java-app-deploy | Create a server and deploy an app on DigitalOcean | Java · DO · Deployment |
-| linux | Basic Linux commands and shell utilities | Bash · Linux · SysOps |
+**15+ years of software engineering** across embedded systems, mobile, full-stack, cloud, and AI.
+
+- **Samsung R&D Bangladesh** (4+ yrs) — firmware for handsets shipped across Middle East, Africa, and Bangladesh. Built the **Bengali Calendar for Bangladesh region** and implemented **Swahili, Yoruba, Igbo, Hausa, and Amharic** support on Samsung feature phones — shipped to production devices used by millions. *This is where multilingual production software became muscle memory.*
+- **Training Pool** (3+ yrs) — co-founder and CEO of **Bangladesh's first online training marketplace and SaaS platform**. Took it from idea to live product with paying users.
+- **Tempest Code & Code Drizzlers** (6+ yrs) — Solutions architect and PM for Android multiplayer games and Bangladesh client projects.
+- **Now** — shipping production RAG applications and AI agents for founders, agencies, and mid-market teams.
+
+[See full work history on LinkedIn →](https://www.linkedin.com/in/md-shihabuddin-sadi/)
 
 <br>
+
 ---
 
-## Development & Software Engineering
+## Blog
 
-| Project | Description | Tech Highlights |
-|---------|-------------|----------------|
-| Training Pool | Training Pool is a SaaS-based training management and marketplace platform that allows trainers to publish, discover, and manage courses. Users can easily find, compare, and enroll in their desired training and courses instantly. | Node.js · React · MongoDB |
-| Multiplayer Mobile Game | A unique conceptual turn-based multiplayer android trivia game for German and International version | Android · Node.js · MongoDB |
-| Samsung feature phone core modules | Worked in the operating system of 'Middle East & Africa version' of various handset models of Samsung, especially on the Editor, NvManager, Alarm, Look Framework, and Call modules. Operating systems were NXP (Nexperia, developed by ST-Ericsson based on C with embedded Java), MMP (man-machine platform, based on C with embedded Java), SNMP (based on C with embedded Java) | C · Java · Feature Phone |
-| Bangla Calendar | Developed and ported 'Bengali Calendar for Bangladesh Region' in the SGP platform feature phone models of Samsung | C · SGP · Feature Phone |
-| African Language Implementation | Implemented various African languages (Swahili, Yoruba, Igbo, Hausa, and Amharic) in feature phone models (both 3*4 and QWERTY keypad) of Samsung | C · Samsung · Feature Phone |
-| Debugging Embedded Systems | Experienced in debugging embedded systems using the 'Trace 32' debugger, done 'Ramdump analysis', 'Tracing', and used 'Lauterbach' for hardware debugging | Trace 32 · Ramdump Analysis · Lauterbach |
-| Emulator Development | Developed emulator for the ease of development for various handset models of Samsung | C · Emulator · Samsung Feature Phone |
-| Tizen | Worked in 'Settings module' of Tizen platform which is developed on C and C++ wrapper | C · C++ · Samsung Feature Phone |
-| Android Operating System | Worked in the Android operating system source code of Samsung for solving localization and UI problems | Android OS · Localization · UI |
+[Read my latest posts →](/blog/) · [RSS feed](https://sadishihab.github.io/feed.xml)
 
 <br>
+
 ---
 
-## Learning
+## Let's Talk
 
-- Advanced Kubernetes & Platform Engineering concepts  
-- Cloud-native monitoring and observability tools  
-- GitOps workflows using ArgoCD & Flux  
-- Terraform & AWS architecture deep dive  
-- Production RAG pipeline design without heavy framework abstractions  
-- Embedding strategy, vector search tuning, and cross-lingual prompt engineering  
-- Multilingual NLP for low-resource and script-mixed languages (Bangla / Banglish)  
+If your chatbot is hallucinating, your AI feature is stuck in demo land, or you want to add a real RAG system to your product without it embarrassing you in front of customers — I can help.
 
-<br>
----
+<div style="display:flex; flex-wrap:wrap; gap:12px; margin: 20px 0 30px 0;">
 
-## Goals
+<a href="https://calendly.com/sadi-shihab/30min" style="background:#0a66c2; color:white; padding:12px 24px; border-radius:6px; text-decoration:none; font-weight:600;">
+📅 Book a 30-min call →
+</a>
 
-- Build production-grade Kubernetes clusters end-to-end  
-- Design secure, automated CI/CD pipelines for microservices  
-- Ship reliable AI / RAG applications with strong evaluation, safety, and human-in-the-loop design  
-- Contribute to open-source DevOps, cloud, and AI projects  
+<a href="mailto:sadi.shihab@gmail.com" style="background:#f3f2ef; color:#0a66c2; padding:12px 24px; border-radius:6px; text-decoration:none; font-weight:600; border:1px solid #0a66c2;">
+✉️ Email me
+</a>
 
-<br>
----
+</div>
 
-## Connect with Me
-
-- **GitHub:** [sadishihab](https://github.com/sadishihab)  
-- **LinkedIn:** [Md. Shihabuddin Sadi](https://www.linkedin.com/in/md-shihabuddin-sadi/)  
-- **Email:** sadi.shihab@gmail.com  
-
-<br>
----
-
-Check out my repositories → [github.com/sadishihab?tab=repositories](https://github.com/sadishihab?tab=repositories)
+- **LinkedIn:** [linkedin.com/in/md-shihabuddin-sadi](https://www.linkedin.com/in/md-shihabuddin-sadi/)
+- **GitHub:** [github.com/sadishihab](https://github.com/sadishihab)
+- **Email:** sadi.shihab@gmail.com
