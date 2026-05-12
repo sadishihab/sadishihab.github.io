@@ -1,7 +1,7 @@
 ---
 layout: default
 title: Md. Shihabuddin Sadi — AI / RAG Application Developer | Production Chatbots & Agents
-description: I build production RAG chatbots and AI agents that ship. Multilingual support, grounded retrieval, no hallucinations. Ex-Samsung R&D. Book a call.
+description: I build production RAG chatbots and AI agents that ship — multilingual support, grounded retrieval, no hallucinations. Ex-Samsung R&D · 15+ years of software engineering. Book a call.
 ---
 
 <!-- Preconnect to shields.io for faster badge loading -->
@@ -9,7 +9,7 @@ description: I build production RAG chatbots and AI agents that ship. Multilingu
 
 <!-- Open Graph / social share -->
 <meta property="og:title" content="Md. Shihabuddin Sadi — AI / RAG Application Developer">
-<meta property="og:description" content="Production RAG chatbots and AI agents that actually work. Multilingual, grounded, reliable.">
+<meta property="og:description" content="Production RAG chatbots and AI agents that ship. Multilingual, grounded, no hallucinations. Ex-Samsung R&D · 15+ years of software engineering.">
 <meta property="og:type" content="website">
 <meta property="og:url" content="https://sadishihab.github.io/">
 
@@ -18,7 +18,7 @@ description: I build production RAG chatbots and AI agents that ship. Multilingu
 **Multilingual support. Grounded retrieval. No hallucinations.**
 Real users, real traffic, real outcomes.
 
-Ex-Samsung R&D · 15+ years software engineering · Based in Dhaka, Bangladesh · Available worldwide remote
+Ex-Samsung R&D · 15+ years of software engineering · Based in Dhaka, Bangladesh · Available worldwide remote
 
 <div style="display:flex; flex-wrap:wrap; gap:12px; margin: 20px 0 30px 0;">
 
