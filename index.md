@@ -14,7 +14,6 @@ image: /grounded-labs-og-image-v2.png
 <meta property="og:type" content="website">
 <meta property="og:url" content="https://sadishihab.github.io/">
 
-<meta name="google-site-verification" content="IwQtLdc2GS-wdKWnhgkIkyLeK3e56aufz4qHihSVXRY" />
 
 ## I build production RAG chatbots and AI agents that ship.
 
