@@ -2,6 +2,7 @@
 layout: default
 title: Md. Shihabuddin Sadi — AI / RAG Application Developer | Production Chatbots & Agents
 description: I build production RAG chatbots and AI agents that ship — multilingual support, grounded retrieval, no hallucinations. Ex-Samsung R&D · 15+ years of software engineering. Book a call.
+image: /grounded-labs-og-image.png
 ---
 
 <!-- Preconnect to shields.io for faster badge loading -->
