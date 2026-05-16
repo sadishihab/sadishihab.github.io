@@ -18,18 +18,18 @@ image: /grounded-labs-og-image-v2.png
 ## I build production RAG chatbots and AI agents that ship.
 
 **Multilingual support. Grounded retrieval. No hallucinations.**
-Real users, real traffic, real outcomes.
+Built for real users, real traffic, real outcomes.
 
 Ex-Samsung R&D · 15+ years of software engineering · Based in Dhaka, Bangladesh · Available worldwide remote
 
 <div style="display:flex; flex-wrap:wrap; gap:12px; margin: 20px 0 30px 0;">
 
 <a href="https://calendly.com/sadi-shihab/30min" style="background:#0a66c2; color:white; padding:12px 24px; border-radius:6px; text-decoration:none; font-weight:600;">
-📅 Book a 30-min call →
+📅 Book a 30-min call
 </a>
 
 <a href="#featured-project" style="background:#f3f2ef; color:#0a66c2; padding:12px 24px; border-radius:6px; text-decoration:none; font-weight:600; border:1px solid #0a66c2;">
-See my work ↓
+See my work
 </a>
 
 </div>
@@ -40,15 +40,11 @@ See my work ↓
 
 ## What I Build
 
-- **Production RAG chatbots** over your docs, PDFs, Notion, or SQL — with citations, not hallucinations
-- **Multilingual AI agents** (Bangla, Banglish, English, and other low-resource or script-mixed languages — great for South Asian, Middle East, and emerging-market audiences)
-- **Messenger / WhatsApp / Telegram / Slack bots** wired to your real data
-- **Custom AI copilots** embedded inside SaaS products
-- **Evaluation pipelines, observability, and guardrails** so your AI doesn't silently regress in production
+Production RAG chatbots over your docs, PDFs, Notion, or SQL — with citations, not hallucinations. Multilingual AI agents that handle Bangla, Banglish, English, and other low-resource or script-mixed languages, which makes them especially useful for South Asian, Middle East, and emerging-market audiences.
 
-### Also
+Beyond that, I build Messenger, WhatsApp, Telegram, and Slack bots wired to real business data, custom AI copilots embedded inside SaaS products, and the evaluation pipelines, observability, and guardrails that keep all of it from silently regressing in production.
 
-The cloud infrastructure to keep all of it running reliably — **Kubernetes, AWS, Terraform, CI/CD, Prometheus, Grafana**. One contractor, one accountable line, no hand-off between "AI guy" and "DevOps guy."
+I also handle the cloud infrastructure to keep it running reliably — Kubernetes, AWS, Terraform, CI/CD, Prometheus, Grafana. One contractor, one accountable line, no hand-off between the AI person and the DevOps person.
 
 <br>
 
@@ -60,21 +56,21 @@ The cloud infrastructure to keep all of it running reliably — **Kubernetes, AW
 
 A production multilingual RAG chatbot deployed on Facebook Messenger for **Minimal Limited**, an interior design company in Dhaka. Customers send questions in **Bangla, Banglish, or English** — the bot always replies in **formal Bangla**, grounded in a curated knowledge base, with graceful human takeover when confidence is low.
 
-> **The deliberate design choice that paid off most:** embedding the question, not the answer. Customers send questions, so questions belong in the searchable space. This one decision fixed more "wrong answer" bugs than any prompt tweak.
+> The one decision that paid off most: embed the question, not the answer. Customers send questions, so questions belong in the searchable space. Fixed more "wrong answer" bugs than any prompt tweak.
 
 **Key decisions:**
 
 - Architected from scratch — **no LangChain, no LlamaIndex** — so every line of the pipeline is transparent and debuggable in production
 - **Similarity-threshold fallback**: if the top match isn't strong enough, the bot says *"share your number, our manager will call"* instead of hallucinating
 - **Cross-lingual prompt engineering**: input accepted in any of three languages, output strictly enforced as formal Bangla
-- **4-stage safe deployment**: terminal → local web → test FB page → live page
+- **4-stage safe deployment**: terminal, local web, test FB page, live page
 - **12 passing pytest tests** covering schema, language enums, intent coverage, and answer-length rules
 
 **Stack:** Python 3.13 · OpenAI (`text-embedding-3-small`, `gpt-4o-mini`) · FAISS (`IndexFlatIP`, L2-normalized) · FastAPI · Uvicorn · Facebook Graph API · Pytest
 
 **At a glance:** 224 curated Q&A entries · 14 intents · top-k=3 retrieval · embedding-dim 1536
 
-📖 [Read the full case study →](/blog/) · 💻 [View on GitHub →](https://github.com/sadishihab/minimal-rag-chatbot)
+[Read the full case study](/blog/) · [View on GitHub](https://github.com/sadishihab/minimal-rag-chatbot)
 
 <br>
 
@@ -82,9 +78,11 @@ A production multilingual RAG chatbot deployed on Facebook Messenger for **Minim
 
 ## Why Teams Hire Me
 
-- ✅ I've shipped real software for **15+ years** — not just AI demos
-- ✅ I bring **engineering rigor**: evals, logging, retrieval tuning, guardrails — the unglamorous work that decides whether your AI survives contact with real users
-- ✅ I can build the **AI and the cloud infra it runs on** — one person, one accountable line
+I've shipped real software for 15+ years — not just AI demos.
+
+I bring engineering rigor: evals, logging, retrieval tuning, and guardrails. The unglamorous work that decides whether your AI survives contact with real users.
+
+And because I can build both the AI and the cloud infrastructure it runs on, there's no hand-off between the AI person and the DevOps person. One contractor, one accountable line.
 
 <br>
 
@@ -94,12 +92,12 @@ A production multilingual RAG chatbot deployed on Facebook Messenger for **Minim
 
 1. **30-min discovery call** — tell me about your product, your data, and where AI fits
 2. **Scoped proposal within 48 hours** — what I'd build, timeline, cost
-3. **Build → ship → iterate** — typically **2–6 weeks** for a production RAG pilot
+3. **Build, ship, iterate** — typically 2–6 weeks for a production RAG pilot
 4. **Optional ongoing support** — evals, observability, infra, and iteration
 
 <div style="margin: 20px 0;">
 <a href="https://calendly.com/sadi-shihab/30min" style="background:#0a66c2; color:white; padding:12px 24px; border-radius:6px; text-decoration:none; font-weight:600;">
-📅 Book a discovery call →
+📅 Book a discovery call
 </a>
 </div>
 
@@ -262,7 +260,7 @@ A production multilingual RAG chatbot deployed on Facebook Messenger for **Minim
 A selection of supporting projects across cloud infrastructure, DevOps automation, and software engineering.
 
 **[Single-Node Kubernetes Cluster](https://github.com/sadishihab/Single-Node-Kubernetes-Cluster)**
-Multi-service web app (React · Node.js · MongoDB) deployed on a single-node Kubernetes cluster using Minikube — Deployments, Services, Ingress, ConfigMaps, Secrets, PV/PVC.
+Multi-service web app (React, Node.js, MongoDB) deployed on a single-node Kubernetes cluster using Minikube — Deployments, Services, Ingress, ConfigMaps, Secrets, PV/PVC.
 **Tech:** Kubernetes · Docker · Minikube · NGINX Ingress
 
 **[Kubernetes on AWS (EKS)](https://github.com/sadishihab/eks)**
@@ -285,7 +283,7 @@ Configuration management and infrastructure automation playbooks.
 Engineering utilities and workflow automation in Python.
 **Tech:** Python · Bash
 
-[See all repositories on GitHub →](https://github.com/sadishihab?tab=repositories)
+[See all repositories on GitHub](https://github.com/sadishihab?tab=repositories)
 
 <br>
 
@@ -293,14 +291,15 @@ Engineering utilities and workflow automation in Python.
 
 ## Background
 
-**15+ years of software engineering** across embedded systems, mobile, full-stack, cloud, and AI.
+15+ years of software engineering across embedded systems, mobile, full-stack, cloud, and AI.
 
-- **Samsung R&D Bangladesh** (4+ yrs) — firmware for handsets shipped across Middle East, Africa, and Bangladesh. Built the **Bengali Calendar for Bangladesh region** and implemented **Swahili, Yoruba, Igbo, Hausa, and Amharic** support on Samsung feature phones — shipped to production devices used by millions. *This is where multilingual production software became muscle memory.*
-- **Training Pool** (3+ yrs) — co-founder and CEO of **Bangladesh's first online training marketplace and SaaS platform**. Took it from idea to live product with paying users.
-- **Tempest Code & Code Drizzlers** (6+ yrs) — Solutions architect and PM for Android multiplayer games and Bangladesh client projects.
-- **Now** — shipping production RAG applications and AI agents for founders, agencies, and mid-market teams.
+I started at Samsung R&D Bangladesh, where I worked on firmware for handsets shipped across Middle East, Africa, and Bangladesh — including the Bengali Calendar for the Bangladesh region and language support for Swahili, Yoruba, Igbo, Hausa, and Amharic on Samsung feature phones used by millions. That's where multilingual production software became muscle memory, which weirdly turned out to be great prep for the multilingual RAG work I do now.
 
-[See full work history on LinkedIn →](https://www.linkedin.com/in/md-shihabuddin-sadi/)
+After Samsung, I co-founded **Training Pool**, Bangladesh's first online training marketplace and SaaS platform. Took it from idea to live product with paying users. Before that, I ran a small dev studio building Android multiplayer games and Bangladesh client projects.
+
+These days I run **Grounded Labs**, shipping production RAG applications and AI agents for founders, agencies, and mid-market teams.
+
+[See full work history on LinkedIn](https://www.linkedin.com/in/md-shihabuddin-sadi/)
 
 <br>
 
@@ -308,7 +307,7 @@ Engineering utilities and workflow automation in Python.
 
 ## Blog
 
-[Read my latest posts →](/blog/) · [RSS feed](https://sadishihab.github.io/feed.xml)
+[Read my latest posts](/blog/) · [RSS feed](https://sadishihab.github.io/feed.xml)
 
 <br>
 
@@ -316,12 +315,12 @@ Engineering utilities and workflow automation in Python.
 
 ## Let's Talk
 
-If your chatbot is hallucinating, your AI feature is stuck in demo land, or you want to add a real RAG system to your product without it embarrassing you in front of customers — I can help.
+If your chatbot is hallucinating, your AI feature isn't making it past the demo stage, or you want to add a real RAG system to your product without it embarrassing you in front of customers — let's talk.
 
 <div style="display:flex; flex-wrap:wrap; gap:12px; margin: 20px 0 30px 0;">
 
 <a href="https://calendly.com/sadi-shihab/30min" style="background:#0a66c2; color:white; padding:12px 24px; border-radius:6px; text-decoration:none; font-weight:600;">
-📅 Book a 30-min call →
+📅 Book a 30-min call
 </a>
 
 <a href="mailto:sadi.shihab@gmail.com" style="background:#f3f2ef; color:#0a66c2; padding:12px 24px; border-radius:6px; text-decoration:none; font-weight:600; border:1px solid #0a66c2;">
