@@ -70,7 +70,7 @@ A production multilingual RAG chatbot deployed on Facebook Messenger for **Minim
 
 **At a glance:** 224 curated Q&A entries · 14 intents · top-k=3 retrieval · embedding-dim 1536
 
-[Read the full case study](/blog/) · [View on GitHub](https://github.com/sadishihab/minimal-rag-chatbot)
+[Read the full case study](/blog/minimal-rag-chatbot/) · [View on GitHub](https://github.com/sadishihab/minimal-rag-chatbot)
 
 <br>
 
