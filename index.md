@@ -297,7 +297,7 @@ I started at Samsung R&D Bangladesh, where I worked on firmware for handsets shi
 
 After Samsung, I co-founded **Training Pool**, Bangladesh's first online training marketplace and SaaS platform. Took it from idea to live product with paying users. Before that, I ran a small dev studio building Android multiplayer games and Bangladesh client projects.
 
-These days I run **Grounded Labs**, shipping production RAG applications and AI agents for founders, agencies, and mid-market teams.
+These days I run **Vector Forge**, shipping production RAG applications and AI agents for founders, agencies, and mid-market teams.
 
 [See full work history on LinkedIn](https://www.linkedin.com/in/md-shihabuddin-sadi/)
 
