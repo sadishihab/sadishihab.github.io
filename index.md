@@ -271,6 +271,14 @@ The seventh turned out to be a platform bug rather than a docs error — editing
 
 <br>
 
+**[anna-app-template](https://github.com/sadishihab/anna-app-template)** — *reusable scaffold, published for other builders*
+
+After shipping an app on the same platform, I extracted the parts worth reusing so the next person doesn't repeat the discovery. JSON-RPC transport with a forward queue for concurrent reverse-RPC calls, persistent storage and model sampling that degrade gracefully when unavailable, three-platform binary CI, and a publish runbook documenting the failure mode at each step.
+
+Clone, run the rename script, get a running plugin — verified from a clean clone rather than assumed.
+
+<br>
+
 ---
 
 ## Other Work
@@ -280,6 +288,10 @@ A selection of supporting projects across cloud infrastructure, DevOps automatio
 **[Error Journal](https://github.com/sadishihab/error-journal)**
 A diagnostic tool that fingerprints errors deterministically so the same underlying failure is recognised across different machines, timestamps, and pod names — then surfaces what fixed it last time. 109 curated diagnoses across seven languages plus Kubernetes, Docker, and shell. Shipped as single-file binaries for three platforms via a GitHub Actions matrix.
 **Tech:** Python (stdlib only) · PyInstaller · GitHub Actions · JSON-RPC
+
+**[Anna App Template](https://github.com/sadishihab/anna-app-template)**
+A reusable scaffold extracted from a shipped application — working JSON-RPC transport, persistent storage, model sampling, three-platform binary builds, and a publish runbook. Verified end-to-end from a clean clone.
+**Tech:** Python · PyInstaller · GitHub Actions · JSON-RPC
 
 **[Single-Node Kubernetes Cluster](https://github.com/sadishihab/Single-Node-Kubernetes-Cluster)**
 Multi-service web app (React, Node.js, MongoDB) deployed on a single-node Kubernetes cluster using Minikube — Deployments, Services, Ingress, ConfigMaps, Secrets, PV/PVC.
