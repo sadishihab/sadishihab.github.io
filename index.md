@@ -255,9 +255,31 @@ And because I can build both the AI and the cloud infrastructure it runs on, the
 
 ---
 
+## Open Source
+
+**[anna-developer-docs](https://github.com/Anna-Partners/anna-developer-docs)** — *Documentation corrections, merged*
+
+While building on a new AI application platform, I lost a day to behaviour that contradicted the documentation. Rather than work around it, I traced each discrepancy through the runtime source and wrote up seven findings with replacement text.
+
+All seven were verified as accurate. Six were merged into the public developer documentation, including a capability string that no longer existed in the runtime, a required manifest field missing from the reference table, and a config schema documented with the wrong data type.
+
+The seventh turned out to be a platform bug rather than a docs error — editing a resource through the web UI silently reset its visibility, causing publish failures that appeared to be user error. Confirmed and fixed in the following release.
+
+> *"One of the best community write-ups we've received — seven precise findings, each verified against actual runtime behavior. We verified all seven items and every single one was accurate."* — platform engineering team
+
+**Why it's here:** most of these were found by reading the runtime source rather than re-reading the docs. That habit — verifying behaviour instead of trusting documentation — is the same one that keeps production systems debuggable.
+
+<br>
+
+---
+
 ## Other Work
 
 A selection of supporting projects across cloud infrastructure, DevOps automation, and software engineering.
+
+**[Error Journal](https://github.com/sadishihab/error-journal)**
+A diagnostic tool that fingerprints errors deterministically so the same underlying failure is recognised across different machines, timestamps, and pod names — then surfaces what fixed it last time. 109 curated diagnoses across seven languages plus Kubernetes, Docker, and shell. Shipped as single-file binaries for three platforms via a GitHub Actions matrix.
+**Tech:** Python (stdlib only) · PyInstaller · GitHub Actions · JSON-RPC
 
 **[Single-Node Kubernetes Cluster](https://github.com/sadishihab/Single-Node-Kubernetes-Cluster)**
 Multi-service web app (React, Node.js, MongoDB) deployed on a single-node Kubernetes cluster using Minikube — Deployments, Services, Ingress, ConfigMaps, Secrets, PV/PVC.
