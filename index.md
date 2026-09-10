@@ -1,7 +1,7 @@
 ---
 layout: default
-title: Md. Shihabuddin Sadi — AI / RAG Application Developer | Production Chatbots & Agents
-description: I build production RAG chatbots and AI agents that ship — multilingual support, grounded retrieval, no hallucinations. Ex-Samsung R&D · 15+ years of software engineering. Book a call.
+title: Md. Shihabuddin Sadi — AI / RAG & Voice Agent Developer | Production Chatbots & Agents
+description: I build production RAG chatbots and voice agents that ship — multilingual support, grounded retrieval, and validation layers that refuse to guess. Ex-Samsung R&D · 15+ years of software engineering. Book a call.
 image: /vector-forge-og-image-v2.png
 ---
 
@@ -9,15 +9,15 @@ image: /vector-forge-og-image-v2.png
 <link rel="preconnect" href="https://img.shields.io" crossorigin>
 
 <!-- Open Graph / social share -->
-<meta property="og:title" content="Md. Shihabuddin Sadi — AI / RAG Application Developer">
-<meta property="og:description" content="Production RAG chatbots and AI agents that ship. Multilingual, grounded, no hallucinations. Ex-Samsung R&D · 15+ years of software engineering.">
+<meta property="og:title" content="Md. Shihabuddin Sadi — AI / RAG & Voice Agent Developer">
+<meta property="og:description" content="Production RAG chatbots and voice agents that ship. Multilingual, grounded, and built so wrong data never reaches your records. Ex-Samsung R&D · 15+ years of software engineering.">
 <meta property="og:type" content="website">
 <meta property="og:url" content="https://sadishihab.github.io/">
 
 
-## I build production RAG chatbots and AI agents that ship.
+## I build production RAG chatbots and voice agents that ship.
 
-**Multilingual support. Grounded retrieval. No hallucinations.**
+**Multilingual support. Grounded retrieval. No hallucinations, and no silent mistakes.**
 Built for real users, real traffic, real outcomes.
 
 I run **Vector Forge** · Ex-Samsung R&D · 15+ years of software engineering · Based in Dhaka, Bangladesh · Available worldwide remote
@@ -42,6 +42,8 @@ See my work
 
 Production RAG chatbots over your docs, PDFs, Notion, or SQL — with citations, not hallucinations. Multilingual AI agents that handle Bangla, Banglish, English, and other low-resource or script-mixed languages, which makes them especially useful for South Asian, Middle East, and emerging-market audiences.
 
+Voice agents that take calls and fill in structured records — intake, verification, booking, triage — with a validation layer so a mis-heard account number or name never quietly lands in your database. If your agent is going to write to a system of record, that layer is not optional.
+
 Beyond that, I build Messenger, WhatsApp, Telegram, and Slack bots wired to real business data, custom AI copilots embedded inside SaaS products, and the evaluation pipelines, observability, and guardrails that keep all of it from silently regressing in production.
 
 I also handle the cloud infrastructure to keep it running reliably — Kubernetes, AWS, Terraform, CI/CD, Prometheus, Grafana. One contractor, one accountable line, no hand-off between the AI person and the DevOps person.
@@ -51,6 +53,33 @@ I also handle the cloud infrastructure to keep it running reliably — Kubernete
 ---
 
 <a id="featured-project"></a>
+
+## Featured Project — Claim Intake Voice Agent
+
+A voice agent that takes insurance claims by phone and **cannot write a value into the record unless server-side code approves it**. The agent listens and proposes. A validator decides, returning one of three verdicts — accepted, unconfirmed, or rejected — along with the exact sentence the agent then reads back, spelled phonetically.
+
+**[🎧 Call it yourself](https://claims.sadishihab.com)** · **[📊 See what validation catches](https://claims.sadishihab.com/compare)**
+
+> The finding that shaped the whole build: I fed the speech recogniser the list of valid policy numbers to improve accuracy. It improved — and it started rewriting mis-heard numbers into real ones. A transcript that began as *C411* came back as a genuine policy number belonging to a different customer, and it passed validation perfectly, because the match had been manufactured before the check ever ran.
+
+**Key decisions:**
+
+- **The deciding layer contains no AI.** Plain Python reads the policy data and returns a verdict. Clever systems make confident mistakes; boring ones don't.
+- **An exact match is not proof.** Policy numbers require spoken confirmation whatever the match quality, because the transcript stopped being an independent observation the moment the recogniser knew the answers.
+- **Three attempts to fix it upstream, all measured, all null.** Transcription mode, turn-detection patience, and tool-schema hints each left the same failure in place. The negative result is the argument for validating downstream.
+- **Consent is bound to the question asked.** Agreeing a value was heard correctly is not agreeing to overwrite a value already recorded. Two consents, enforced in code.
+- **Full evidence trail** — every attempt, including the rejections, linked to what the caller actually said and when. Crash-safe, and purged after 24 hours so caller data doesn't accumulate.
+- **206 tests**, several pinning design decisions so a later change that undoes one fails and explains why it existed.
+
+**Stack:** Python 3.14 · AssemblyAI Voice Agent API (Universal-3.5 Pro) · FastAPI · raw WebSocket relay · AudioWorklet (PCM16 @ 24 kHz) · Server-sent events · Docker · NGINX · Let's Encrypt
+
+**Recognised by the platform team:** three documentation corrections from this build were published by AssemblyAI, and the recogniser-bias finding was escalated to their research team.
+
+[View on GitHub](https://github.com/sadishihab/claim-intake-agent)
+
+<br>
+
+---
 
 ## Featured Project — Minimal RAG Chatbot
 
@@ -82,6 +111,8 @@ I've shipped real software for 15+ years — not just AI demos.
 
 I bring engineering rigor: evals, logging, retrieval tuning, and guardrails. The unglamorous work that decides whether your AI survives contact with real users.
 
+I also measure before I ship. Three separate attempts to tune my way out of a speech recognition problem were tested and thrown away because the numbers said they didn't work. Shipping a change that measures at zero is how systems quietly get worse.
+
 And because I can build both the AI and the cloud infrastructure it runs on, there's no hand-off between the AI person and the DevOps person. One contractor, one accountable line.
 
 <br>
@@ -92,7 +123,7 @@ And because I can build both the AI and the cloud infrastructure it runs on, the
 
 1. **30-min discovery call** — tell me about your product, your data, and where AI fits
 2. **Scoped proposal within 48 hours** — what I'd build, timeline, cost
-3. **Build, ship, iterate** — typically 2–6 weeks for a production RAG pilot
+3. **Build, ship, iterate** — typically 2–6 weeks for a production RAG or voice pilot
 4. **Optional ongoing support** — evals, observability, infra, and iteration
 
 <div style="margin: 20px 0;">
@@ -147,6 +178,34 @@ And because I can build both the AI and the cloud infrastructure it runs on, the
 
 <a href="https://developers.facebook.com/docs/messenger-platform">
 <img src="https://img.shields.io/badge/Messenger%20Platform-0084FF?style=for-the-badge&logo=messenger&logoColor=white" height="28">
+</a>
+
+</div>
+
+<br>
+
+### Voice & Real-Time
+
+<div style="display:flex; flex-wrap:wrap; gap:5px;">
+
+<a href="https://www.assemblyai.com/">
+<img src="https://img.shields.io/badge/AssemblyAI-2545D3?style=for-the-badge&logoColor=white" height="28">
+</a>
+
+<a href="https://www.assemblyai.com/docs/voice-agents/voice-agent-api">
+<img src="https://img.shields.io/badge/Voice%20Agent%20API-1B1B3A?style=for-the-badge&logoColor=white" height="28">
+</a>
+
+<a href="https://developer.mozilla.org/en-US/docs/Web/API/WebSockets_API">
+<img src="https://img.shields.io/badge/WebSockets-4A4A4A?style=for-the-badge&logo=socketdotio&logoColor=white" height="28">
+</a>
+
+<a href="https://developer.mozilla.org/en-US/docs/Web/API/Web_Audio_API">
+<img src="https://img.shields.io/badge/Web%20Audio%20API-BF360C?style=for-the-badge&logoColor=white" height="28">
+</a>
+
+<a href="https://developer.mozilla.org/en-US/docs/Web/API/Server-sent_events">
+<img src="https://img.shields.io/badge/Server--Sent%20Events-006064?style=for-the-badge&logoColor=white" height="28">
 </a>
 
 </div>
@@ -229,6 +288,10 @@ And because I can build both the AI and the cloud infrastructure it runs on, the
 <img src="https://img.shields.io/badge/NGINX-009639?style=for-the-badge&logo=nginx&logoColor=white" height="28">
 </a>
 
+<a href="https://letsencrypt.org/">
+<img src="https://img.shields.io/badge/Let's%20Encrypt-003A70?style=for-the-badge&logo=letsencrypt&logoColor=white" height="28">
+</a>
+
 <a href="https://www.kernel.org/">
 <img src="https://img.shields.io/badge/Linux-FCC624?style=for-the-badge&logo=linux&logoColor=black" height="28">
 </a>
@@ -268,6 +331,14 @@ The seventh turned out to be a platform bug rather than a docs error — editing
 > *"One of the best community write-ups we've received — seven precise findings, each verified against actual runtime behavior. We verified all seven items and every single one was accurate."* — platform engineering team
 
 **Why it's here:** most of these were found by reading the runtime source rather than re-reading the docs. That habit — verifying behaviour instead of trusting documentation — is the same one that keeps production systems debuggable.
+
+<br>
+
+**[claim-intake-agent](https://github.com/sadishihab/claim-intake-agent)** — *findings published by AssemblyAI*
+
+The same habit, on a different platform. Building the voice agent surfaced three places where the published message-sequence and browser-integration docs disagreed with the machine-readable API schema — a field name for reply audio, a field name for agent transcripts, and the identifier on tool results. Each was verified against the live API rather than assumed, reported, and published as documentation corrections.
+
+A fourth finding was a model behaviour rather than a docs error: biasing transcription toward a list of known values can rewrite a mis-heard value into one of them, which is dangerous anywhere the transcript is the evidence being validated. That one was escalated to their research team.
 
 <br>
 
@@ -331,7 +402,7 @@ I started at Samsung R&D Bangladesh, where I worked on firmware for handsets shi
 
 After Samsung, I co-founded **Training Pool**, Bangladesh's first online training marketplace and SaaS platform. Took it from idea to live product with paying users. Before that, I ran a small dev studio building Android multiplayer games and Bangladesh client projects.
 
-These days I run **Vector Forge**, shipping production RAG applications and AI agents for founders, agencies, and mid-market teams.
+These days I run **Vector Forge**, shipping production RAG applications, voice agents, and AI systems for founders, agencies, and mid-market teams.
 
 [See full work history on LinkedIn](https://www.linkedin.com/in/md-shihabuddin-sadi/)
 
@@ -349,7 +420,7 @@ These days I run **Vector Forge**, shipping production RAG applications and AI a
 
 ## Let's Talk
 
-If your chatbot is hallucinating, your AI feature isn't making it past the demo stage, or you want to add a real RAG system to your product without it embarrassing you in front of customers — let's talk.
+If your chatbot is hallucinating, your voice agent is writing down things nobody said, your AI feature isn't making it past the demo stage, or you want to add a real RAG system to your product without it embarrassing you in front of customers — let's talk.
 
 <div style="display:flex; flex-wrap:wrap; gap:12px; margin: 20px 0 30px 0;">
 
