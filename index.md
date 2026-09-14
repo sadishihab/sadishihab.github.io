@@ -1,7 +1,7 @@
 ---
 layout: default
 title: Md. Shihabuddin Sadi — AI / RAG & Voice Agent Developer | Production Chatbots & Agents
-description: I build production RAG chatbots and voice agents that ship — multilingual support, grounded retrieval, and validation layers that refuse to guess. Ex-Samsung R&D · 15+ years of software engineering. Book a call.
+description: I build production RAG chatbots and voice agents that ship — multilingual support, grounded retrieval, and validation layers that refuse to guess. Ex-Samsung R&D · 15+ years of software engineering. Available for direct and white-label contract work.
 image: /vector-forge-og-image-v2.png
 ---
 
@@ -21,6 +21,8 @@ image: /vector-forge-og-image-v2.png
 Built for real users, real traffic, real outcomes.
 
 I run **Vector Forge** · Ex-Samsung R&D · 15+ years of software engineering · Based in Dhaka, Bangladesh · Available worldwide remote
+
+Available for direct engagements and for white-label contract work behind agencies and product studios.
 
 <div style="display:flex; flex-wrap:wrap; gap:12px; margin: 20px 0 30px 0;">
 
@@ -69,7 +71,7 @@ A voice agent that takes insurance claims by phone and **cannot write a value in
 - **Three attempts to fix it upstream, all measured, all null.** Transcription mode, turn-detection patience, and tool-schema hints each left the same failure in place. The negative result is the argument for validating downstream.
 - **Consent is bound to the question asked.** Agreeing a value was heard correctly is not agreeing to overwrite a value already recorded. Two consents, enforced in code.
 - **Full evidence trail** — every attempt, including the rejections, linked to what the caller actually said and when. Crash-safe, and purged after 24 hours so caller data doesn't accumulate.
-- **206 tests**, several pinning design decisions so a later change that undoes one fails and explains why it existed.
+- **206 tests**, of which 62 cover the validation layer alone — all three verdicts, plus confusable policy pairs like `BX7-4402` and `BX7-4420`. Several pin design decisions rather than behaviour, so a later change that undoes one fails and explains why it existed.
 
 **Stack:** Python 3.14 · AssemblyAI Voice Agent API (Universal-3.5 Pro) · FastAPI · raw WebSocket relay · AudioWorklet (PCM16 @ 24 kHz) · Server-sent events · Docker · NGINX · Let's Encrypt
 
@@ -119,12 +121,31 @@ And because I can build both the AI and the cloud infrastructure it runs on, the
 
 ---
 
+## For Agencies & Product Studios
+
+If your team sells AI work and needs the engineering layer behind it, I work as a white-label contractor under your brand and under NDA. You keep the client relationship. I stay invisible unless you want me on the call.
+
+Where I usually come in:
+
+- **RAG that has to hold up** — retrieval quality, grounding, citations, evaluation, and a defensible answer when the system doesn't know
+- **Agent and voice backends** — tool calling, server-side validation, confirmation flows, and the boundary between what the model proposes and what gets written
+- **The demo-to-production gap** — the build worked in the pitch and started failing with real users, and someone needs to find out why
+- **Infrastructure** — Docker, AWS, Kubernetes, Terraform, CI/CD, monitoring, and observability, so the AI work doesn't stall waiting on deployment
+
+Scoped projects or ongoing capacity, whichever suits the engagement.
+
+<br>
+
+---
+
 ## How We'd Work Together
 
 1. **30-min discovery call** — tell me about your product, your data, and where AI fits
 2. **Scoped proposal within 48 hours** — what I'd build, timeline, cost
 3. **Build, ship, iterate** — typically 2–6 weeks for a production RAG or voice pilot
 4. **Optional ongoing support** — evals, observability, infra, and iteration
+
+Agency engagements are usually faster: a short technical call on the work already sold, a scoped estimate, and a start date.
 
 <div style="margin: 20px 0;">
 <a href="https://calendly.com/sadi-shihab/30min" style="background:#0a66c2; color:white; padding:12px 24px; border-radius:6px; text-decoration:none; font-weight:600;">
@@ -360,10 +381,6 @@ A selection of supporting projects across cloud infrastructure, DevOps automatio
 A diagnostic tool that fingerprints errors deterministically so the same underlying failure is recognised across different machines, timestamps, and pod names — then surfaces what fixed it last time. 109 curated diagnoses across seven languages plus Kubernetes, Docker, and shell. Shipped as single-file binaries for three platforms via a GitHub Actions matrix.
 **Tech:** Python (stdlib only) · PyInstaller · GitHub Actions · JSON-RPC
 
-**[Anna App Template](https://github.com/sadishihab/anna-app-template)**
-A reusable scaffold extracted from a shipped application — working JSON-RPC transport, persistent storage, model sampling, three-platform binary builds, and a publish runbook. Verified end-to-end from a clean clone.
-**Tech:** Python · PyInstaller · GitHub Actions · JSON-RPC
-
 **[Single-Node Kubernetes Cluster](https://github.com/sadishihab/Single-Node-Kubernetes-Cluster)**
 Multi-service web app (React, Node.js, MongoDB) deployed on a single-node Kubernetes cluster using Minikube — Deployments, Services, Ingress, ConfigMaps, Secrets, PV/PVC.
 **Tech:** Kubernetes · Docker · Minikube · NGINX Ingress
@@ -383,10 +400,6 @@ Monitoring and observability setup for cloud-native applications.
 **[Ansible Automation](https://github.com/sadishihab/ansible)**
 Configuration management and infrastructure automation playbooks.
 **Tech:** Ansible · Playbooks
-
-**[Python Automation](https://github.com/sadishihab/automation-with-python)**
-Engineering utilities and workflow automation in Python.
-**Tech:** Python · Bash
 
 [See all repositories on GitHub](https://github.com/sadishihab?tab=repositories)
 
@@ -421,6 +434,8 @@ These days I run **Vector Forge**, shipping production RAG applications, voice a
 ## Let's Talk
 
 If your chatbot is hallucinating, your voice agent is writing down things nobody said, your AI feature isn't making it past the demo stage, or you want to add a real RAG system to your product without it embarrassing you in front of customers — let's talk.
+
+Running an agency with AI work sold and no one to build the reliable version of it? That conversation is even shorter.
 
 <div style="display:flex; flex-wrap:wrap; gap:12px; margin: 20px 0 30px 0;">
 
