@@ -115,6 +115,8 @@ I bring engineering rigor: evals, logging, retrieval tuning, and guardrails. The
 
 I also measure before I ship. Three separate attempts to tune my way out of a speech recognition problem were tested and thrown away because the numbers said they didn't work. Shipping a change that measures at zero is how systems quietly get worse.
 
+And I don't trust a metric until I know what it hides. On a recent project, FP16 quantization looked fine on mean error while 15% of gripper commands silently flipped sign — close became open. The average was healthy and the system was broken. Finding that class of failure is most of what reliability work actually is.
+
 And because I can build both the AI and the cloud infrastructure it runs on, there's no hand-off between the AI person and the DevOps person. One contractor, one accountable line.
 
 <br>
@@ -227,6 +229,34 @@ Agency engagements are usually faster: a short technical call on the work alread
 
 <a href="https://developer.mozilla.org/en-US/docs/Web/API/Server-sent_events">
 <img src="https://img.shields.io/badge/Server--Sent%20Events-006064?style=for-the-badge&logoColor=white" height="28">
+</a>
+
+</div>
+
+<br>
+
+### Model Optimization & Edge Inference
+
+<div style="display:flex; flex-wrap:wrap; gap:5px;">
+
+<a href="https://docs.openvino.ai/">
+<img src="https://img.shields.io/badge/OpenVINO-0068B5?style=for-the-badge&logo=intel&logoColor=white" height="28">
+</a>
+
+<a href="https://github.com/openvinotoolkit/nncf">
+<img src="https://img.shields.io/badge/NNCF%20INT8-1B4F72?style=for-the-badge&logoColor=white" height="28">
+</a>
+
+<a href="https://pytorch.org/">
+<img src="https://img.shields.io/badge/PyTorch-EE4C2C?style=for-the-badge&logo=pytorch&logoColor=white" height="28">
+</a>
+
+<a href="https://www.sbert.net/">
+<img src="https://img.shields.io/badge/sentence--transformers-2C3E50?style=for-the-badge&logoColor=white" height="28">
+</a>
+
+<a href="https://mujoco.org/">
+<img src="https://img.shields.io/badge/MuJoCo-4A235A?style=for-the-badge&logoColor=white" height="28">
 </a>
 
 </div>
@@ -375,7 +405,16 @@ Clone, run the rename script, get a running plugin — verified from a clean clo
 
 ## Other Work
 
-A selection of supporting projects across cloud infrastructure, DevOps automation, and software engineering.
+A selection of supporting projects across AI research engineering, cloud infrastructure, DevOps automation, and software engineering.
+
+**[Bimanual VLA — Table Setting in Simulation](https://github.com/sadishihab/bimanual-vla)** — *measurement over assumption*
+Two simulated SO-101 arms set a table in MuJoCo: a scripted expert picks four props from a randomized layout, hands a prop between arms when no single arm can reach both the prop and its slot, records the successes as a LeRobot v3.0 dataset, trains an ACT policy on it, and converts the checkpoint to OpenVINO IR for Intel inference hardware.
+
+The engineering interest isn't the robotics — it's the discipline. Every design decision traces to a measurement, and the README opens with a table of what was measured and what explicitly was not.
+
+Three findings worth the click. **FP16 quantization looked healthy on mean error while 14.94% of gripper commands flipped sign** — close became open, which drops whatever the arm is holding; INT8 flips 0.92% and is 3.46× smaller. **The original parity check passed and was wrong**, because it ran against synthetic noise where a badly wrong precision looks exact; on real frames the same model was off by three orders of magnitude more. And the underperforming policy was handled as a **controlled experiment rather than a result to bury**: three causes diagnosed, one isolated by removing an image-task confound from the training data, attention measurably redirected (non-plate target contact 0/30 → 7/30) while task competence stayed flat, exactly as the two untouched causes predict.
+
+**Tech:** Python 3.11 · MuJoCo · LeRobot 0.4.4 (ACT, 51.6M params) · PyTorch · OpenVINO + NNCF · MiniLM-L6
 
 **[Error Journal](https://github.com/sadishihab/error-journal)**
 A diagnostic tool that fingerprints errors deterministically so the same underlying failure is recognised across different machines, timestamps, and pod names — then surfaces what fixed it last time. 109 curated diagnoses across seven languages plus Kubernetes, Docker, and shell. Shipped as single-file binaries for three platforms via a GitHub Actions matrix.
