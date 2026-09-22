@@ -107,6 +107,31 @@ A production multilingual RAG chatbot deployed on Facebook Messenger for **Minim
 
 ---
 
+## Featured Project — Error Journal
+
+Paste any error — a Python traceback, a Kubernetes pod crash, a Docker build failure — and get a real fix back. Hit the exact same problem again later, even on a different machine, and it recognizes it and tells you what fixed it last time. Live on the Anna App Store.
+
+**[🚀 Try it live](https://anna.partners/store/@sadi/error-journal)** · **[📦 View source](https://github.com/sadishihab/error-journal)**
+
+> The design call that shaped the whole thing: two logs of the same underlying error almost never look byte-identical — timestamps, pod names, and file paths all differ. Strip everything volatile, classify what remains, hash it, and the same problem gets recognized as the same problem no matter how differently it's phrased each time.
+
+**Key decisions:**
+
+- **109 curated diagnoses**, hand-written and verified, across Python, JavaScript/Node, Go, Java, Rust, Ruby, PHP, plus Kubernetes, Docker, shell, and networking. Outside that list, it says *"not in my playbook"* honestly rather than inventing a fix — a wrong fix during an outage is worse than no fix.
+- **Runnable commands, not templates.** Real pod names, ports, and module names get substituted into fix steps, gated behind a strict allow-list so error text pasted by a user can never become a shell-injection vector in a command someone copies and runs.
+- **Python, stdlib only** — no dependency chain to break, shipped as single-file binaries for Linux, macOS, and Windows via PyInstaller in a GitHub Actions matrix, with a smoke test on every platform before release.
+- **Testing surfaced real bugs**, including ANSI color codes silently breaking detection when copied from CI logs, and log-line prefixes like syslog and pytest tags causing correct errors to go unrecognized.
+
+**Stack:** Python (stdlib only) · PyInstaller · JSON-RPC · GitHub Actions
+
+**Also produced:** a [reusable app template](https://github.com/sadishihab/anna-app-template) extracted from this build, so the next developer on the same platform doesn't have to rediscover the same setup issues.
+
+[View on GitHub](https://github.com/sadishihab/error-journal)
+
+<br>
+
+---
+
 ## Why Teams Hire Me
 
 I've shipped real software for 15+ years — not just AI demos.
@@ -369,15 +394,15 @@ Agency engagements are usually faster: a short technical call on the work alread
 
 ---
 
-## Open Source
+## Open Source & Platform Contributions
 
 **[anna-developer-docs](https://github.com/Anna-Partners/anna-developer-docs)** — *Documentation corrections, merged*
 
-While building on a new AI application platform, I lost a day to behaviour that contradicted the documentation. Rather than work around it, I traced each discrepancy through the runtime source and wrote up seven findings with replacement text.
+While building Error Journal on Anna's platform, I lost a day to behaviour that contradicted the documentation. Rather than work around it, I traced each discrepancy through the runtime source and wrote up seven findings with replacement text.
 
 All seven were verified as accurate. Six were merged into the public developer documentation, including a capability string that no longer existed in the runtime, a required manifest field missing from the reference table, and a config schema documented with the wrong data type.
 
-The seventh turned out to be a platform bug rather than a docs error — editing a resource through the web UI silently reset its visibility, causing publish failures that appeared to be user error. Confirmed and fixed in the following release.
+The seventh turned out to be a production bug rather than a docs error — a storage-token issue that took the platform team a proper investigation to root cause, traced to a resource silently resetting its visibility when edited through the web UI. Confirmed and fixed in the following release.
 
 > *"One of the best community write-ups we've received — seven precise findings, each verified against actual runtime behavior. We verified all seven items and every single one was accurate."* — platform engineering team
 
@@ -395,7 +420,7 @@ A fourth finding was a model behaviour rather than a docs error: biasing transcr
 
 **[anna-app-template](https://github.com/sadishihab/anna-app-template)** — *reusable scaffold, published for other builders*
 
-After shipping an app on the same platform, I extracted the parts worth reusing so the next person doesn't repeat the discovery. JSON-RPC transport with a forward queue for concurrent reverse-RPC calls, persistent storage and model sampling that degrade gracefully when unavailable, three-platform binary CI, and a publish runbook documenting the failure mode at each step.
+After shipping Error Journal on the same platform, I extracted the parts worth reusing so the next person doesn't repeat the discovery. JSON-RPC transport with a forward queue for concurrent reverse-RPC calls, persistent storage and model sampling that degrade gracefully when unavailable, three-platform binary CI, and a publish runbook documenting the failure mode at each step.
 
 Clone, run the rename script, get a running plugin — verified from a clean clone rather than assumed.
 
@@ -415,10 +440,6 @@ The engineering interest isn't the robotics — it's the discipline. Every desig
 Three findings worth the click. **FP16 quantization looked healthy on mean error while 14.94% of gripper commands flipped sign** — close became open, which drops whatever the arm is holding; INT8 flips 0.92% and is 3.46× smaller. **The original parity check passed and was wrong**, because it ran against synthetic noise where a badly wrong precision looks exact; on real frames the same model was off by three orders of magnitude more. And the underperforming policy was handled as a **controlled experiment rather than a result to bury**: three causes diagnosed, one isolated by removing an image-task confound from the training data, attention measurably redirected (non-plate target contact 0/30 → 7/30) while task competence stayed flat, exactly as the two untouched causes predict.
 
 **Tech:** Python 3.11 · MuJoCo · LeRobot 0.4.4 (ACT, 51.6M params) · PyTorch · OpenVINO + NNCF · MiniLM-L6
-
-**[Error Journal](https://github.com/sadishihab/error-journal)**
-A diagnostic tool that fingerprints errors deterministically so the same underlying failure is recognised across different machines, timestamps, and pod names — then surfaces what fixed it last time. 109 curated diagnoses across seven languages plus Kubernetes, Docker, and shell. Shipped as single-file binaries for three platforms via a GitHub Actions matrix.
-**Tech:** Python (stdlib only) · PyInstaller · GitHub Actions · JSON-RPC
 
 **[Single-Node Kubernetes Cluster](https://github.com/sadishihab/Single-Node-Kubernetes-Cluster)**
 Multi-service web app (React, Node.js, MongoDB) deployed on a single-node Kubernetes cluster using Minikube — Deployments, Services, Ingress, ConfigMaps, Secrets, PV/PVC.
