@@ -1,7 +1,7 @@
 ---
 layout: default
 title: Md. Shihabuddin Sadi — AI / RAG & Voice Agent Developer | Production Chatbots & Agents
-description: I build production RAG chatbots and voice agents that ship — multilingual support, grounded retrieval, and validation layers that refuse to guess. Ex-Samsung R&D · 15+ years of software engineering. Available for direct and white-label contract work.
+description: I build production RAG chatbots and voice agents that ship — multilingual support, grounded retrieval, and validation layers that refuse to guess. Ex-Samsung R&D · 17+ years of software engineering. Available for direct and white-label contract work.
 image: /vector-forge-og-image-v2.png
 ---
 
@@ -10,7 +10,7 @@ image: /vector-forge-og-image-v2.png
 
 <!-- Open Graph / social share -->
 <meta property="og:title" content="Md. Shihabuddin Sadi — AI / RAG & Voice Agent Developer">
-<meta property="og:description" content="Production RAG chatbots and voice agents that ship. Multilingual, grounded, and built so wrong data never reaches your records. Ex-Samsung R&D · 15+ years of software engineering.">
+<meta property="og:description" content="Production RAG chatbots and voice agents that ship. Multilingual, grounded, and built so wrong data never reaches your records. Ex-Samsung R&D · 17+ years of software engineering.">
 <meta property="og:type" content="website">
 <meta property="og:url" content="https://sadishihab.github.io/">
 
@@ -20,7 +20,7 @@ image: /vector-forge-og-image-v2.png
 **Multilingual support. Grounded retrieval. No hallucinations, and no silent mistakes.**
 Built for real users, real traffic, real outcomes.
 
-I run **Vector Forge** · Ex-Samsung R&D · 15+ years of software engineering · Based in Dhaka, Bangladesh · Available worldwide remote
+I run **Vector Forge** · Ex-Samsung R&D · 17+ years of software engineering · Based in Dhaka, Bangladesh · Available worldwide remote
 
 Available for direct engagements and for white-label contract work behind agencies and product studios.
 
@@ -134,7 +134,7 @@ Paste any error — a Python traceback, a Kubernetes pod crash, a Docker build f
 
 ## Why Teams Hire Me
 
-I've shipped real software for 15+ years — not just AI demos.
+I've shipped real software for 17+ years — not just AI demos.
 
 I bring engineering rigor: evals, logging, retrieval tuning, and guardrails. The unglamorous work that decides whether your AI survives contact with real users.
 
@@ -469,7 +469,7 @@ Configuration management and infrastructure automation playbooks.
 
 ## Background
 
-15+ years of software engineering across embedded systems, mobile, full-stack, cloud, and AI.
+17+ years of software engineering across embedded systems, mobile, full-stack, cloud, and AI.
 
 I started at Samsung R&D Bangladesh, where I worked on firmware for handsets shipped across Middle East, Africa, and Bangladesh — including the Bengali Calendar for the Bangladesh region and language support for Swahili, Yoruba, Igbo, Hausa, and Amharic on Samsung feature phones used by millions. That's where multilingual production software became muscle memory, which weirdly turned out to be great prep for the multilingual RAG work I do now.
 
