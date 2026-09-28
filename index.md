@@ -260,6 +260,22 @@ Agency engagements are usually faster: a short technical call on the work alread
 
 <br>
 
+### AI Agents & Verification
+
+<div style="display:flex; flex-wrap:wrap; gap:5px;">
+
+<a href="https://bob.ibm.com/">
+<img src="https://img.shields.io/badge/IBM%20Bob%202.0-052FAD?style=for-the-badge&logo=ibm&logoColor=white" height="28">
+</a>
+
+<a href="https://en.wikipedia.org/wiki/Mutation_testing">
+<img src="https://img.shields.io/badge/Mutation%20Testing-5C2D91?style=for-the-badge&logoColor=white" height="28">
+</a>
+
+</div>
+
+<br>
+
 ### Model Optimization & Edge Inference
 
 <div style="display:flex; flex-wrap:wrap; gap:5px;">
@@ -431,6 +447,15 @@ Clone, run the rename script, get a running plugin — verified from a clean clo
 ## Other Work
 
 A selection of supporting projects across AI research engineering, cloud infrastructure, DevOps automation, and software engineering.
+
+**[Counterexample — PR Verification on IBM Bob 2.0](https://github.com/sadishihab/counterexample)** — *evidence over opinions, not tests that pass*
+A pull-request verification tool for AI-generated code, where green CI is a weak signal because the same reasoning that wrote a bug often wrote the tests around it. It runs two independent checks and merges them into one Review Receipt: diff-scoped mutation testing (an AST mutator that injects bugs only into the lines a PR changed, then runs the PR's own tests against each mutant), and claim falsification, where IBM Bob extracts the concrete claims a PR makes from its diff and linked issue, spawns one subagent per claim, and has each write and run an adversarial test to break it. A GitHub Action posts the mutation layer's result on every pull request.
+
+Three findings worth the click. **On a real test PR, mutation testing scored a reproducible 100% while the PR was still wrong** — the bug computes a discount from the wrong variable, which none of the four mutation operator families can express. Claim falsification caught it: 4 of 5 claims falsified, each with a failing test and real output, including a silent breaking change for existing callers that was never planted. **The tool had a bug of its own** — in Python's pathlib, joining a temp directory with an absolute path silently discards the temp directory, so concurrent mutant writes landed on the real repo instead of an isolated copy. It surfaced as unexplained working-tree corruption and is now guarded by a loud error. And **CI reported 0% for the wrong reason**: pytest was collecting unrelated files from GitHub's merge-commit checkout, so every mutant errored identically. The receipt now shows per-mutant error detail, and the PR comment states plainly that it covers mutation testing, not requirement-level verification.
+
+On the Bob side: a custom mode with scoped tool permissions, two custom skills, and five parallel subagents in isolated contexts. The first full review cost 1.71 Bobcoins. [See it on a real pull request](https://github.com/sadishihab/counterexample-demo-checkout/pull/1).
+
+**Tech:** Python 3.11 · IBM Bob 2.0 (custom modes, skills, subagents) · AST mutation testing · pytest · GitHub Actions
 
 **[Bimanual VLA — Table Setting in Simulation](https://github.com/sadishihab/bimanual-vla)** — *measurement over assumption*
 Two simulated SO-101 arms set a table in MuJoCo: a scripted expert picks four props from a randomized layout, hands a prop between arms when no single arm can reach both the prop and its slot, records the successes as a LeRobot v3.0 dataset, trains an ACT policy on it, and converts the checkpoint to OpenVINO IR for Intel inference hardware.
