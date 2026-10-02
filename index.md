@@ -1,7 +1,7 @@
 ---
 layout: default
-title: Md. Shihabuddin Sadi — AI Agents, MCP, RAG & Voice Agent Developer | Production Systems That Refuse to Guess
-description: I build production AI agents, MCP servers, RAG chatbots and voice agents that ship — grounded in real source documents, with validation layers that refuse to guess. Ex-Samsung R&D · 17+ years of software engineering. Available for direct and white-label contract work.
+title: Md. Shihabuddin Sadi — AI Agents, MCP Servers, RAG & Voice Agents
+description: AI agents, MCP servers, RAG chatbots and voice agents that answer from the source, not a guess. Ex-Samsung R&D, 17+ years. Available for contract work.
 image: /vector-forge-og-image-v2.png
 ---
 
@@ -9,16 +9,18 @@ image: /vector-forge-og-image-v2.png
 <link rel="preconnect" href="https://img.shields.io" crossorigin>
 
 <!-- Open Graph / social share -->
-<meta property="og:title" content="Md. Shihabuddin Sadi — AI Agents, MCP, RAG & Voice Agent Developer">
-<meta property="og:description" content="Production AI agents, MCP servers, RAG chatbots and voice agents that ship. Grounded in real documents, and built so wrong data never reaches your records. Ex-Samsung R&D · 17+ years of software engineering.">
+<meta property="og:title" content="Md. Shihabuddin Sadi — AI Agents, MCP, RAG & Voice Agents">
+<meta property="og:description" content="Production AI agents, MCP servers, RAG chatbots and voice agents that answer from the source, not a guess. Ex-Samsung R&D · 17+ years.">
+<meta property="og:image" content="https://sadishihab.github.io/vector-forge-og-image-v2.png">
+<meta name="twitter:card" content="summary_large_image">
 <meta property="og:type" content="website">
 <meta property="og:url" content="https://sadishihab.github.io/">
 
 
-## I build production AI agents, MCP servers, RAG chatbots and voice agents that ship.
+## I help teams ship reliable AI systems for real customers.
 
-**Grounded in your real documents. Validation layers that refuse to guess. No hallucinations, and no silent mistakes.**
-Built for real users, real traffic, real outcomes.
+**AI agents, MCP servers, RAG chatbots and voice agents that answer from the source, not a guess.**
+Grounded in your real documents, with validation layers that refuse to write down what nobody said. Built for real users, real traffic, real outcomes.
 
 I run **Vector Forge** · Ex-Samsung R&D · 17+ years of software engineering · Based in Dhaka, Bangladesh · Available worldwide remote
 
@@ -32,6 +34,10 @@ Available for direct engagements and for white-label contract work behind agenci
 
 <a href="#featured-project" style="background:#f3f2ef; color:#0a66c2; padding:12px 24px; border-radius:6px; text-decoration:none; font-weight:600; border:1px solid #0a66c2;">
 See my work
+</a>
+
+<a href="https://youtu.be/EbuSbJQJrXQ" style="background:#f3f2ef; color:#0a66c2; padding:12px 24px; border-radius:6px; text-decoration:none; font-weight:600; border:1px solid #0a66c2;">
+🎬 Watch the FixIt demo
 </a>
 
 </div>
@@ -60,7 +66,7 @@ I also handle the cloud infrastructure to keep it running reliably — AWS, Kube
 
 ## Featured Project — FixIt: Appliance Repair Answers from the Real Manual
 
-A self-hosted **MCP server for Alexa+** that diagnoses home appliance problems from the **real manufacturer manual for the appliance you own**, and cites the page. Ask about an error code, or describe a symptom in plain words ("my washer has too many suds"), and FixIt returns the manual's causes and repair steps. If the manual doesn't say, FixIt says that too. It never invents a repair step or a safety claim.
+A self-hosted **MCP server built for Alexa+** that diagnoses home appliance problems from the **real manufacturer manual for the appliance you own**, and cites the page. Ask about an error code, or describe a symptom in plain words ("my washer has too many suds"), and FixIt returns the manual's causes and repair steps. If the manual doesn't say, FixIt says that too. It never invents a repair step or a safety claim.
 
 Built for the Build, Ship, Shape: Amazon Developer Hackathon (Alexa+ track, plus the AWS Builder and Open Source mini challenges), and maintained as an open-source project.
 
