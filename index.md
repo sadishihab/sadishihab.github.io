@@ -1,7 +1,7 @@
 ---
 layout: default
-title: Md. Shihabuddin Sadi — AI / RAG & Voice Agent Developer | Production Chatbots & Agents
-description: I build production RAG chatbots and voice agents that ship — multilingual support, grounded retrieval, and validation layers that refuse to guess. Ex-Samsung R&D · 17+ years of software engineering. Available for direct and white-label contract work.
+title: Md. Shihabuddin Sadi — AI Agents, MCP, RAG & Voice Agent Developer | Production Systems That Refuse to Guess
+description: I build production AI agents, MCP servers, RAG chatbots and voice agents that ship — grounded in real source documents, with validation layers that refuse to guess. Ex-Samsung R&D · 17+ years of software engineering. Available for direct and white-label contract work.
 image: /vector-forge-og-image-v2.png
 ---
 
@@ -9,15 +9,15 @@ image: /vector-forge-og-image-v2.png
 <link rel="preconnect" href="https://img.shields.io" crossorigin>
 
 <!-- Open Graph / social share -->
-<meta property="og:title" content="Md. Shihabuddin Sadi — AI / RAG & Voice Agent Developer">
-<meta property="og:description" content="Production RAG chatbots and voice agents that ship. Multilingual, grounded, and built so wrong data never reaches your records. Ex-Samsung R&D · 17+ years of software engineering.">
+<meta property="og:title" content="Md. Shihabuddin Sadi — AI Agents, MCP, RAG & Voice Agent Developer">
+<meta property="og:description" content="Production AI agents, MCP servers, RAG chatbots and voice agents that ship. Grounded in real documents, and built so wrong data never reaches your records. Ex-Samsung R&D · 17+ years of software engineering.">
 <meta property="og:type" content="website">
 <meta property="og:url" content="https://sadishihab.github.io/">
 
 
-## I build production RAG chatbots and voice agents that ship.
+## I build production AI agents, MCP servers, RAG chatbots and voice agents that ship.
 
-**Multilingual support. Grounded retrieval. No hallucinations, and no silent mistakes.**
+**Grounded in your real documents. Validation layers that refuse to guess. No hallucinations, and no silent mistakes.**
 Built for real users, real traffic, real outcomes.
 
 I run **Vector Forge** · Ex-Samsung R&D · 17+ years of software engineering · Based in Dhaka, Bangladesh · Available worldwide remote
@@ -42,19 +42,52 @@ See my work
 
 ## What I Build
 
-Production RAG chatbots over your docs, PDFs, Notion, or SQL — with citations, not hallucinations. Multilingual AI agents that handle Bangla, Banglish, English, and other low-resource or script-mixed languages, which makes them especially useful for South Asian, Middle East, and emerging-market audiences.
+**MCP servers and agent tools** that plug your product, documents or data into AI assistants. The tools are deterministic, the answers cite their source, and where it matters there is no model in the live request path, so responses are fast, predictable and testable. Hosted on AWS (Amazon Bedrock AgentCore, or your own containers), with observability from day one.
+
+Production RAG chatbots over your docs, PDFs, Notion, or SQL — with citations, not hallucinations. That includes the unglamorous ingestion work: messy PDFs, broken text encodings, and schema-checked extraction audited against the source. Multilingual AI agents that handle Bangla, Banglish, English, and other low-resource or script-mixed languages, which makes them especially useful for South Asian, Middle East, and emerging-market audiences.
 
 Voice agents that take calls and fill in structured records — intake, verification, booking, triage — with a validation layer so a mis-heard account number or name never quietly lands in your database. If your agent is going to write to a system of record, that layer is not optional.
 
 Beyond that, I build Messenger, WhatsApp, Telegram, and Slack bots wired to real business data, custom AI copilots embedded inside SaaS products, and the evaluation pipelines, observability, and guardrails that keep all of it from silently regressing in production.
 
-I also handle the cloud infrastructure to keep it running reliably — Kubernetes, AWS, Terraform, CI/CD, Prometheus, Grafana. One contractor, one accountable line, no hand-off between the AI person and the DevOps person.
+I also handle the cloud infrastructure to keep it running reliably — AWS, Kubernetes, Terraform, CI/CD, CloudWatch, Prometheus, Grafana. One contractor, one accountable line, no hand-off between the AI person and the DevOps person.
 
 <br>
 
 ---
 
 <a id="featured-project"></a>
+
+## Featured Project — FixIt: Appliance Repair Answers from the Real Manual
+
+A self-hosted **MCP server for Alexa+** that diagnoses home appliance problems from the **real manufacturer manual for the appliance you own**, and cites the page. Ask about an error code, or describe a symptom in plain words ("my washer has too many suds"), and FixIt returns the manual's causes and repair steps. If the manual doesn't say, FixIt says that too. It never invents a repair step or a safety claim.
+
+Built for the Build, Ship, Shape: Amazon Developer Hackathon (Alexa+ track, plus the AWS Builder and Open Source mini challenges), and maintained as an open-source project.
+
+**[🎬 Watch the demo](https://youtu.be/EbuSbJQJrXQ)** · **[📦 View source (MIT)](https://github.com/sadishihab/fixit-mcp)** · **[🏁 Devpost](https://devpost.com/software/fixit-ai-home-appliance-repair-agent-for-alexa)**
+
+> The finding that shaped the whole build: in real conversations, the assistant described an appliance code as "safe" because the manual's safety-warning list for it was empty. An empty field is not a fact. Now an empty field produces "the manual doesn't list one", an unknown code produces "not found", and both rules are pinned by tests so they can't quietly regress.
+
+**Key decisions:**
+
+- **No model inside any tool.** All AI work happens offline: manuals are parsed, repaired and extracted into structured records under a strict schema, then audited against the source text. The six live tools are fast in-memory lookups: diagnose an error code, diagnose a symptom, check the recorded warranty, and list, add or remove the household's appliances. Two of them render MCP Apps visual cards.
+- **Silent PDF corruption, found and fixed at the source.** Two of the seven manuals extracted as plausible-looking text that was actually garbage, each shifted by a constant character offset (a different offset per manual). Detection and repair, with guards against false positives, became a standalone open-source library: [pdf-encoding-repair](https://github.com/sadishihab/pdf-encoding-repair).
+- **The warranty tool reports, it never promises.** It is a deterministic date check that states the recorded warranty date, and never claims something is covered.
+- **Measured, including the weak spots.** In one grounding-eval run, 62 of 63 cases were fully grounded. The keyword symptom matcher was tuned from 25 to 43 of 47 test paraphrases with 0 wrong first matches, but held-out recall stayed at 4 of 10, and that is published rather than hidden. Warm calls take roughly 500–650 ms from Dhaka (about 320 ms of it network round trip). A brand-new session takes about 5 seconds.
+- **Production deployment on AWS.** The server runs on Amazon Bedrock AgentCore Runtime with IAM SigV4 auth. Household state lives in AgentCore Memory, because every Runtime session is its own microVM and local storage forgot everything between conversations. A CloudWatch dashboard, error and latency alarms, and SNS alerts watch it.
+- **Honest about the client.** Alexa+ developer tools aren't open to outside builders yet, so the demo uses a clearly labelled *simulated* Alexa+ client, and the project claims no more than that.
+
+**Stack:** Python 3.12 · MCP Python SDK (spec 2025-11-25, Streamable HTTP, MCP Apps) · Amazon Bedrock AgentCore (Runtime, Memory) · Amazon Bedrock (Claude, Nova Pro) · Amazon Polly · CloudWatch · SNS · ECR · Docker · FastAPI · PyMuPDF · pydantic · GitHub Actions
+
+**At a glance:** 7 real manufacturer manuals · 46 error-code records · 114 symptom rows · 6 MCP tools · 60+ entry friction log for the Amazon developer teams
+
+**Built to be contributed to:** MIT license, CI, tagged releases, a quickstart that runs without an AWS account, "good first issue" tickets, and a guide for manufacturers who want their manuals supported.
+
+[View on GitHub](https://github.com/sadishihab/fixit-mcp)
+
+<br>
+
+---
 
 ## Featured Project — Claim Intake Voice Agent
 
@@ -138,7 +171,9 @@ I've shipped real software for 17+ years — not just AI demos.
 
 I bring engineering rigor: evals, logging, retrieval tuning, and guardrails. The unglamorous work that decides whether your AI survives contact with real users.
 
-I also measure before I ship. Three separate attempts to tune my way out of a speech recognition problem were tested and thrown away because the numbers said they didn't work. Shipping a change that measures at zero is how systems quietly get worse.
+I keep the model out of the places it doesn't belong. In FixIt, every live answer is a deterministic lookup into data extracted and audited offline; in the claim intake agent, the layer that decides what gets written contains no AI at all. Models are excellent at proposing. Code should decide.
+
+I also measure before I ship, and I publish the weak numbers alongside the strong ones. Three separate attempts to tune my way out of a speech recognition problem were tested and thrown away because the numbers said they didn't work. FixIt's symptom matcher reports its held-out recall of 4 in 10 right next to its tuned results, because a number you only show when it's flattering isn't a measurement.
 
 And I don't trust a metric until I know what it hides. On a recent project, FP16 quantization looked fine on mean error while 15% of gripper commands silently flipped sign — close became open. The average was healthy and the system was broken. Finding that class of failure is most of what reliability work actually is.
 
@@ -154,6 +189,7 @@ If your team sells AI work and needs the engineering layer behind it, I work as 
 
 Where I usually come in:
 
+- **MCP servers and assistant integrations** — getting a client's product or knowledge into AI assistants with tools that are fast, testable, cited, and deployed with monitoring
 - **RAG that has to hold up** — retrieval quality, grounding, citations, evaluation, and a defensible answer when the system doesn't know
 - **Agent and voice backends** — tool calling, server-side validation, confirmation flows, and the boundary between what the model proposes and what gets written
 - **The demo-to-production gap** — the build worked in the pitch and started failing with real users, and someone needs to find out why
@@ -169,7 +205,7 @@ Scoped projects or ongoing capacity, whichever suits the engagement.
 
 1. **30-min discovery call** — tell me about your product, your data, and where AI fits
 2. **Scoped proposal within 48 hours** — what I'd build, timeline, cost
-3. **Build, ship, iterate** — typically 2–6 weeks for a production RAG or voice pilot
+3. **Build, ship, iterate** — typically 2–6 weeks for a production RAG, agent or voice pilot
 4. **Optional ongoing support** — evals, observability, infra, and iteration
 
 Agency engagements are usually faster: a short technical call on the work already sold, a scoped estimate, and a start date.
@@ -196,7 +232,43 @@ Agency engagements are usually faster: a short technical call on the work alread
 
 ## Tech Stack
 
-### AI / LLM / RAG
+### AI Agents, MCP & AWS AI
+
+<div style="display:flex; flex-wrap:wrap; gap:5px;">
+
+<a href="https://modelcontextprotocol.io/">
+<img src="https://img.shields.io/badge/Model%20Context%20Protocol-1A1A1A?style=for-the-badge&logoColor=white" height="28">
+</a>
+
+<a href="https://modelcontextprotocol.io/docs/extensions/apps">
+<img src="https://img.shields.io/badge/MCP%20Apps-3B3B98?style=for-the-badge&logoColor=white" height="28">
+</a>
+
+<a href="https://aws.amazon.com/bedrock/agentcore/">
+<img src="https://img.shields.io/badge/Bedrock%20AgentCore-232F3E?style=for-the-badge&logo=amazon-aws&logoColor=white" height="28">
+</a>
+
+<a href="https://aws.amazon.com/bedrock/">
+<img src="https://img.shields.io/badge/Amazon%20Bedrock-01A88D?style=for-the-badge&logo=amazon-aws&logoColor=white" height="28">
+</a>
+
+<a href="https://aws.amazon.com/ai/generative-ai/nova/">
+<img src="https://img.shields.io/badge/Amazon%20Nova-8C4FFF?style=for-the-badge&logoColor=white" height="28">
+</a>
+
+<a href="https://aws.amazon.com/polly/">
+<img src="https://img.shields.io/badge/Amazon%20Polly-527FFF?style=for-the-badge&logoColor=white" height="28">
+</a>
+
+<a href="https://www.anthropic.com/claude-code">
+<img src="https://img.shields.io/badge/Claude%20Code-D97757?style=for-the-badge&logoColor=white" height="28">
+</a>
+
+</div>
+
+<br>
+
+### AI / LLM / RAG & Document AI
 
 <div style="display:flex; flex-wrap:wrap; gap:5px;">
 
@@ -214,6 +286,14 @@ Agency engagements are usually faster: a short technical call on the work alread
 
 <a href="https://www.uvicorn.org/">
 <img src="https://img.shields.io/badge/Uvicorn-2C2C2C?style=for-the-badge&logo=uvicorn&logoColor=white" height="28">
+</a>
+
+<a href="https://docs.pydantic.dev/">
+<img src="https://img.shields.io/badge/Pydantic-E92063?style=for-the-badge&logo=pydantic&logoColor=white" height="28">
+</a>
+
+<a href="https://pymupdf.readthedocs.io/">
+<img src="https://img.shields.io/badge/PyMuPDF-1B5E20?style=for-the-badge&logoColor=white" height="28">
 </a>
 
 <a href="https://numpy.org/">
@@ -360,6 +440,10 @@ Agency engagements are usually faster: a short technical call on the work alread
 <img src="https://img.shields.io/badge/AWS-232F3E?style=for-the-badge&logo=amazon-aws&logoColor=white" height="28">
 </a>
 
+<a href="https://aws.amazon.com/ecr/">
+<img src="https://img.shields.io/badge/Amazon%20ECR-FF9900?style=for-the-badge&logo=amazon-aws&logoColor=white" height="28">
+</a>
+
 <a href="https://www.terraform.io/">
 <img src="https://img.shields.io/badge/Terraform-623CE4?style=for-the-badge&logo=terraform&logoColor=white" height="28">
 </a>
@@ -396,6 +480,10 @@ Agency engagements are usually faster: a short technical call on the work alread
 
 <div style="display:flex; flex-wrap:wrap; gap:5px;">
 
+<a href="https://aws.amazon.com/cloudwatch/">
+<img src="https://img.shields.io/badge/Amazon%20CloudWatch-FF4F8B?style=for-the-badge&logo=amazon-aws&logoColor=white" height="28">
+</a>
+
 <a href="https://prometheus.io/">
 <img src="https://img.shields.io/badge/Prometheus-E6522C?style=for-the-badge&logo=prometheus&logoColor=white" height="28">
 </a>
@@ -411,6 +499,22 @@ Agency engagements are usually faster: a short technical call on the work alread
 ---
 
 ## Open Source & Platform Contributions
+
+**[pdf-encoding-repair](https://github.com/sadishihab/pdf-encoding-repair)** — *new open-source library, published on [PyPI](https://pypi.org/project/pdf-encoding-repair/)*
+
+Some PDFs extract as text that looks like text but isn't: a broken font encoding shifts every character by a constant offset, and search, RAG and extraction pipelines downstream quietly ingest the garbage. Nothing errors, so nobody notices.
+
+I hit this on two of the seven manufacturer manuals behind FixIt, each with a different offset. Rather than patch it inside one project, I extracted the detection and repair into a standalone MIT-licensed library, with guards against false positives so clean PDFs are left untouched, CI, and a tagged release. Anyone ingesting PDFs can now reuse the fix instead of rediscovering it.
+
+<br>
+
+**[fixit-mcp](https://github.com/sadishihab/fixit-mcp)** — *open to contributors, with a friction log for the platform teams*
+
+FixIt is MIT licensed and set up for outside contributors: "good first issue" tickets, issue and PR templates, a security policy, an architecture guide, and a guide for appliance manufacturers who want their manuals supported. A quickstart runs the whole thing without an AWS account.
+
+Alongside it is a friction log of 60+ real entries for the Amazon developer teams, each with what was attempted, what happened, a severity, the workaround, and a suggestion. It covers IAM permissions that `CreateAgentRuntime` needs but the docs don't list, a container guide that doesn't fit MCP servers, an undocumented Alexa+ session model, and the discovery that Claude models on Bedrock are billed through AWS Marketplace, outside promotional credits.
+
+<br>
 
 **[anna-developer-docs](https://github.com/Anna-Partners/anna-developer-docs)** — *Documentation corrections, merged*
 
@@ -500,7 +604,7 @@ I started at Samsung R&D Bangladesh, where I worked on firmware for handsets shi
 
 After Samsung, I co-founded **Training Pool**, Bangladesh's first online training marketplace and SaaS platform. Took it from idea to live product with paying users. Before that, I ran a small dev studio building Android multiplayer games and Bangladesh client projects.
 
-These days I run **Vector Forge**, shipping production RAG applications, voice agents, and AI systems for founders, agencies, and mid-market teams.
+These days I run **Vector Forge**, shipping production RAG applications, AI agents, MCP servers, and voice agents for founders, agencies, and mid-market teams.
 
 [See full work history on LinkedIn](https://www.linkedin.com/in/md-shihabuddin-sadi/)
 
@@ -519,6 +623,8 @@ These days I run **Vector Forge**, shipping production RAG applications, voice a
 ## Let's Talk
 
 If your chatbot is hallucinating, your voice agent is writing down things nobody said, your AI feature isn't making it past the demo stage, or you want to add a real RAG system to your product without it embarrassing you in front of customers — let's talk.
+
+Want your product or your documentation inside AI assistants, through an MCP server that answers from the source and says so when it doesn't know? Same conversation.
 
 Running an agency with AI work sold and no one to build the reliable version of it? That conversation is even shorter.
 
