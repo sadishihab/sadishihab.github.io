@@ -1,6 +1,6 @@
 theme: jekyll-theme-minimal
 title: "Md. Shihabuddin Sadi"
-description: "AI / RAG Application Developer · Production chatbots and AI agents that ship · Multilingual support, grounded retrieval, no hallucinations · Ex-Samsung R&D · 15+ years of software engineering"
+description: "AI agents, MCP servers, RAG chatbots and voice agents that answer from the source, not a guess · Ex-Samsung R&D · 17+ years of software engineering"
 url: "https://sadishihab.github.io"
 author:
   name: "Md. Shihabuddin Sadi"
@@ -19,7 +19,7 @@ plugins:
 # RSS Feed configuration
 feed:
   path: feed.xml
-  title: "Md. Shihabuddin Sadi — AI, RAG & Cloud Engineering"
-  description: "Production RAG chatbots, AI agents, multilingual NLP, and the cloud infrastructure that runs them"
+  title: "Md. Shihabuddin Sadi — AI Agents, MCP, RAG & Cloud Engineering"
+  description: "AI agents, MCP servers, production RAG chatbots, voice agents, and the cloud infrastructure that runs them"
   url: "https://sadishihab.github.io"
 google_analytics: G-EQVFR6Y826
